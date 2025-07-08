@@ -1,24 +1,31 @@
+import { useInView } from "react-intersection-observer";
 import Hero from "./Hero";
-import MediaBackground from "./BackgroundMedia";
+import BackgroundMedia from "./BackgroundMedia";
 import NavBar from "./NavBar";
-import StarsBackground from "./BackgroundStars";
 import About from "./About";
+import BackgroundStars from "./BackgroundStars";
 
 export default function LandingPage() {
-    return (
-        <div className="relative w-full h-full overflow-hidden">
-            <MediaBackground/>
+  const { ref: heroRef, inView: isHeroVisible } = useInView({
+    threshold: 0.3,
+  });
 
-            <div className="fixed top-0 left-0 w-full h-full bg-black/40 z-0" />
+  return (
+    <div className="relative w-full min-h-screen overflow-hidden">
+      <BackgroundMedia isVisible={isHeroVisible} />
 
-            <StarsBackground length={120} />
+      <div className="fixed top-0 left-0 w-full h-full bg-black/40 z-0" />
+       
+      <BackgroundStars length={120} />
 
-            <NavBar />
+      <NavBar />
 
-            <main className="relative z-10 pt-[65px]">
-                <Hero />
-            </main>
-                <About/>
-        </div>
-    );
+      <main className="relative z-10 pt-[65px]">
+        <section ref={heroRef}>
+          <Hero />
+        </section>
+        <About />
+      </main>
+    </div>
+  );
 }
