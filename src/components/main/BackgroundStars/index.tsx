@@ -4,7 +4,7 @@ type StarsProps = {
   length?: number;
 };
 
-export default function StarsBackground({ length = 100 }: StarsProps) {
+export default function BackgroundStars({ length = 100 }: StarsProps) {
   const stars = React.useMemo(() => {
     return Array.from({ length }).map(() => ({
       top: `${Math.random() * 100}%`,

@@ -1,7 +1,7 @@
 import Hero from "./Hero";
-import MediaBackground from "./MediaBackground";
+import MediaBackground from "./BackgroundMedia";
 import NavBar from "./NavBar";
-import StarsBackground from "./StarsBackground";
+import StarsBackground from "./BackgroundStars";
 
 export default function LandingPage() {
     return (
