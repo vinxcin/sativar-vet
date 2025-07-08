@@ -31,13 +31,12 @@
 } 
 
 @keyframes twinkle {
-  0%, 100% { opacity: 0.4; }   /* menor brilho máximo */
-  50% { opacity: 0.1; }        /* brilho mínimo mais baixo */
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
 }
 
 .animate-twinkle {
   animation-name: twinkle;
-  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-duration: 6s;       /* mais lento */
+  animation-timing-function: ease-in-out;
 }

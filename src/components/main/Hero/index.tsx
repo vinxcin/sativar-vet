@@ -4,7 +4,9 @@ export default function Hero() {
     const scrollToSection = () => {
         const section = document.getElementById("about");
         if (section) {
-            section.scrollIntoView({ behavior: "smooth" });
+            const yOffset = -65; // Altura do navbar fixa, ajuste se precisar
+            const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({ top: y, behavior: "smooth" });
         }
     };
     return (
@@ -19,11 +21,18 @@ export default function Hero() {
                     <p className="text-sm md:text-lg text-center text-gray-300 opacity-80 pt-2">
                         A ponte entre o conhecimento ancestral e a exploração do cosmos.
                     </p>
+                    <div className="flex justify-center mt-10">
+                        <a
+                            onClick={scrollToSection}
+                            href="#proxima-sessao"
+                            className="animate-bounce text-white/70 hover:text-white transition cursor-pointer"
+                            aria-label="Role para baixo"
+                        >
+                            <ChevronDown size={40} />
+                        </a>
+                    </div>
                 </div>
 
-                <a onClick={scrollToSection} href="#proxima-sessao" className="absolute bottom-10 animate-bounce text-white/70 hover:text-white transition" aria-label="Role para baixo">
-                    <ChevronDown size={40} />
-                </a>
             </div>
 
         </section>
