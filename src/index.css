@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+
+:root {
+  font-family: 'Quicksand', sans-serif;
+
+  /* color-scheme: light dark; */
+  /* color: rgba(255, 255, 255, 0.87); */
+  background-color: #01000a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.title {
+  font-family: 'Zen Dots', cursive;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+.text {
+  font-family: 'Quicksand', sans-serif;
+}
+
+::-webkit-scrollbar{width: 0.6vw; height: .6vh; background: #0b021d}
+::-webkit-scrollbar-thumb{background: linear-gradient(to bottom, #0b021d, #7a3bfc); border-radius: 5px;}
+
+*::selection  {
+  background: #6429d168;
+} 
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.4; }   /* menor brilho máximo */
+  50% { opacity: 0.1; }        /* brilho mínimo mais baixo */
+}
+
+.animate-twinkle {
+  animation-name: twinkle;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;       /* mais lento */
+}
