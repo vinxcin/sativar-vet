@@ -22,7 +22,7 @@ export default function BackgroundMedia() {
           key="img"
           src={BG_BLACK_HOLE}
           alt="Fundo alternativo"
-          className="fixed rotate-180 top-0 left-0 w-full h-full object-cover z-[-1] translate-y-[-29vh] sm:translate-y-[-30vh]"
+          className="fixed rotate-180 top-0 left-0 w-full h-full object-cover z-[-1] translate-y-[-28.8vh] sm:translate-y-[-30vh] md:translate-y-[-32vh]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.8 }}
           exit={{ opacity: 0 }}
@@ -35,7 +35,7 @@ export default function BackgroundMedia() {
           muted
           loop
           playsInline
-          className="fixed rotate-180 top-0 left-0 w-full h-full object-cover z-[-1] translate-y-[-38vh] lg:translate-y-[-40vh]"
+          className="fixed rotate-180 top-0 left-0 w-full h-full object-cover z-[-1] translate-y-[-43vh] lg:translate-y-[-40vh]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
