@@ -61,14 +61,14 @@ export default function NavBar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden flex flex-col items-center gap-16 h-[100vh] pt-20 bg-[#09031d] shadow-inner shadow-[#4d1dab]/50"
+            className="md:hidden flex flex-col items-center gap-16 h-[100vh] pt-20 bg-[#09031d] "
           >
             {NavBarItens.map((item) => (
               <a
                 key={item.id}
                 href={`#${item.id}`}
                 onClick={closeMenu}
-                className="text-gray-200 hover:text-purple-400 transition-all duration-300"
+                className="text-gray-200 text-2xl hover:text-purple-400 transition-all duration-300"
               >
                 {item.name}
               </a>

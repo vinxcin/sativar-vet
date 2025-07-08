@@ -8,15 +8,15 @@ export default function Hero() {
         }
     };
     return (
-        <section className="flex flex-col h-full w-full px-12">
+        <section className="flex flex-col h-full w-full  sm:px-12">
 
-            <div className="h-[80vh] w-full flex items-center justify-center">
+            <div className="h-[60vh] sm:h-[80vh] w-full flex items-center justify-center">
                 <div className="flex flex-col">
-                    <h1 className="text-6xl title font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-orange-300 bg-clip-text text-transparent">
+                    <h1 className="text-5xl text-center md:text-6xl title bg-gradient-to-r from-purple-400 via-pink-400 to-orange-300 bg-clip-text text-transparent">
                         Viagem ao Céu Noturno
                     </h1>
 
-                    <p className="text-lg text-center text-gray-300 opacity-80 pt-2">
+                    <p className="text-sm md:text-lg text-center text-gray-300 opacity-80 pt-2">
                         A ponte entre o conhecimento ancestral e a exploração do cosmos.
                     </p>
                 </div>
