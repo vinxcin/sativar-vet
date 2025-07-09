@@ -22,7 +22,7 @@ export default function About() {
       <div className="relative z-10">
         <h1 className="text-3xl sm:text-4xl title mb-6">Sobre o projeto</h1>
 
-        <div className="max-w-[120vw] px-2 md:max-w-[89vw] mx-auto text-gray-300">
+        <div className="max-w-[120vw] px-6 sm:px-8 md:max-w-[89vw] mx-auto text-gray-300">
 
           <p className="text-xl leading-relaxed md:px-80">
             <span className="font-bold italic">Viagem ao Céu Noturno </span>
