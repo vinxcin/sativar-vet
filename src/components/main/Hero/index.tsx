@@ -24,7 +24,7 @@ export default function Hero() {
       </div>
 
       {/* Chevron fixado no rodapé da seção */}
-      <div className="absolute bottom-[-2vh] left-0 right-0 flex justify-center">
+      <div className="absolute bottom-[-0vh] left-0 right-0 flex justify-center">
         <ChevronDown
           onClick={scrollToSection}
           className="animate-bounce text-white/70 hover:text-purple-600 transition cursor-pointer"
