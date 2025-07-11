@@ -18,7 +18,7 @@ export default function NavBar() {
             alt="LOGO_NAV_BAR"
             width={40}
             height={40}
-            className="cursor-pointer transition-all duration-500 ease-in-out group-hover:rotate-12 group-hover:scale-110"
+            className="cursor-pointer  "
           />
         </a>
 
