@@ -12,13 +12,13 @@ export default function NavBar() {
   return (
     <nav className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50">
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[25px]">
-        <a href="/" className="h-auto w-auto flex flex-row items-center">
+        <a href="#home" className="group h-auto w-auto flex flex-row items-center">
           <img
             src={LOGO_NAV_BAR}
             alt="LOGO_NAV_BAR"
             width={40}
             height={40}
-            className="cursor-pointer hover:animate-pulseGlow transition-transform"
+            className="cursor-pointer transition-all duration-500 ease-in-out group-hover:rotate-12 group-hover:scale-110"
           />
         </a>
 
@@ -38,7 +38,7 @@ export default function NavBar() {
 
         <div className="hidden md:flex flex-row gap-5">
           <a className="cursor-pointer text-white hover:text-[#7042f8f4]" href={"https://www.instagram.com/viagemaoceunoturno/"} target="_blank" rel="noreferrer">
-            <Instagram/>
+            <Instagram />
           </a>
         </div>
 

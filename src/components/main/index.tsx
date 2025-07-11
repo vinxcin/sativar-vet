@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import BackgroundMedia from "./BackgroundMedia";
 import NavBar from "./NavBar";
 import About from "./About";
+import Experiences from "./Experiences";
 import BackgroundStars from "./BackgroundStars";
 
 export default function LandingPage() {
@@ -25,6 +26,7 @@ export default function LandingPage() {
           <Hero />
         </section>
         <About />
+        <Experiences/>
       </main>
     </div>
   );

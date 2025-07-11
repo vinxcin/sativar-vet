@@ -26,7 +26,7 @@ export default function BackgroundMedia({ isVisible }: Props) {
           <motion.img
             key="img"
             src={BG_BLACK_HOLE}
-            className="fixed rotate-180 top-0 left-0 w-full h-full object-cover z-[-1] translate-y-[-28.7vh] sm:translate-y-[-30vh] md:translate-y-[-32vh]"
+            className="fixed rotate-180 top-0 left-0 w-full h-full object-cover z-[-1] translate-y-[-28.7vh] sm:translate-y-[-30vh]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.8 }}
             exit={{ opacity: 0 }}
