@@ -74,6 +74,8 @@ export default function Experiences() {
           );
         })}
       </div>
+      <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 animate-glow" />
+
     </section>
   );
 }
