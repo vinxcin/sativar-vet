@@ -24,6 +24,7 @@ export default function Knowledges() {
               <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 via-pink-500 to-yellow-400 rounded-xl blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-500 z-0" />
 
               <div className="relative z-10 bg-[#0e0a1e]/90 backdrop-blur-md rounded-xl p-4 shadow-md shadow-purple-500/25 border border-purple-900/40 flex flex-col items-start h-full">
+                
                 {/* <span className="mb-2 px-3 py-1 text-xs font-semibold rounded-full bg-gradient-to-r from-fuchsia-600 to-pink-500 text-white tracking-wide shadow-md">
                   {{
                     article: 'Artigo Científico',
