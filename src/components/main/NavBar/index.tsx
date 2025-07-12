@@ -22,7 +22,7 @@ export default function NavBar() {
           />
         </a>
 
-        <div className="hidden md:flex w-[600px] h-full flex-row items-center justify-between">
+        <div className="hidden md:flex md:w-[600px] lg:w-[700px] h-full flex-row items-center justify-between">
           <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#03001490] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
             {NavBarItens.map((item) => (
               <a
