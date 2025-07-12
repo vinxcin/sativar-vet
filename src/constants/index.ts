@@ -5,6 +5,7 @@ export const NavBarItens = [
         { name: "Início", id: "home" },
         { name: "Sobre o Projeto", id: "about" },
         { name: "Vivências Cósmicas", id: "vivencias" },
+        { name: "Saberes", id: "knowledges" },
         { name: "Contato", id: "contato" }
     ];
 

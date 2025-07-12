@@ -5,7 +5,7 @@ import { BookOpen, Award, Mic } from 'lucide-react';
 
 export default function Knowledges() {
   return (
-    <section className="w-full bg-[#050111] px-6 py-16 flex flex-col items-center gap-12">
+    <section id="knowledges" className="w-full bg-[#050111] px-6 py-16 flex flex-col items-center gap-12">
       <div className="w-full max-w-6xl text-center px-4 relative">
         <h2 className="text-amber-50 title text-2xl md:text-4xl font-bold mb-4">
           Saberes Estelares
