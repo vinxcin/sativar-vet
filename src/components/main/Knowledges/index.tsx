@@ -40,7 +40,7 @@ export default function Knowledges() {
                 <p className="text-sm text-gray-300 mb-3 leading-relaxed">{item.description}</p>
 
                 <div className="mt-auto flex gap-6 md:gap-10 text-left w-full">
-                  {item.articleLink && (
+                  {/* {item.articleLink && (
                     <a
                       href={item.articleLink}
                       className="flex items-center gap-2 text-sm text-cyan-300 hover:text-cyan-100 transition"
@@ -49,7 +49,7 @@ export default function Knowledges() {
                     >
                       <BookOpen size={16} /> Ler artigo
                     </a>
-                  )}
+                  )} */}
                   {item.institutionalLink && (
                     <a
                       href={item.institutionalLink}
