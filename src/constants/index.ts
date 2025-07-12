@@ -61,13 +61,13 @@ export const KnowledgesCard = [
     // certificateLink pode existir aqui também, caso tenha certificado
     // institutionalLink pode existir para a matéria da instituição
   },
-  {
-    type: 'article',  // tipo artigo científico
-    image: '/images/artigo1.jpg',
-    title: '',
-    description: 'Ministrou a palestra “Buracos Negros” durante a VI Noite com as Estrelas, promovida pela EE Alcides de Castro Galvão, em 11 de novembro de 2020.',
-    articleLink: 'https://revistaeduca.com/astronomia-cultural', // link para ler artigo
-    // certificateLink pode existir aqui também, caso tenha certificado
-    // institutionalLink pode existir para a matéria da instituição
-  },
+  // {
+  //   type: 'article',  // tipo artigo científico
+  //   image: '/images/artigo1.jpg',
+  //   title: '',
+  //   description: 'Ministrou a palestra “Buracos Negros” durante a VI Noite com as Estrelas, promovida pela EE Alcides de Castro Galvão, em 11 de novembro de 2020.',
+  //   articleLink: 'https://revistaeduca.com/astronomia-cultural', // link para ler artigo
+  //   // certificateLink pode existir aqui também, caso tenha certificado
+  //   // institutionalLink pode existir para a matéria da instituição
+  // },
 ];
