@@ -19,7 +19,7 @@ export default function LandingPage() {
 
       <div className="fixed top-0 left-0 w-full h-full bg-black/40 z-0" />
        
-      <BackgroundStars amount={350} />
+      <BackgroundStars amount={200} />
 
       <NavBar />
 
