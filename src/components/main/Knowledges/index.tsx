@@ -4,14 +4,14 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import { motion } from 'framer-motion';
 
 import { KnowledgesCard } from '@/constants';
-import { Award, Atom , BookOpen } from 'lucide-react';
+import { Award, Atom, ArrowRight, BookOpen } from 'lucide-react';
 
 
 export default function Knowledges() {
   return (
     <section
       id="knowledges"
-      className="w-full bg-[#050111] px-6 py-16 flex flex-col items-center gap-12"
+      className="w-full  px-6 py-16 flex flex-col items-center gap-12"
     >
       <div className="w-full max-w-6xl text-center px-4 relative">
         <motion.h2
@@ -34,6 +34,10 @@ export default function Knowledges() {
           Educação.
         </motion.p>
 
+        <p className="flex items-center justify-center gap-2 mb-4 text-sm  text-cyan-600 italic">
+          Deslize para o lado <ArrowRight className="w-5 h-5 animate-bounce-x" /> ou aguarde o próximo card
+        </p>
+
         {/* Swiper Carrossel */}
         <Swiper
           modules={[Autoplay, Pagination]}
@@ -47,8 +51,6 @@ export default function Knowledges() {
             delay: 5000,
             disableOnInteraction: false,
           }}
-          // pagination={{ clickable: true }}
-        // Espaço extra para afastar as bolinhas
         >
           {KnowledgesCard.map((item, index) => (
             <SwiperSlide key={index}>
@@ -93,7 +95,7 @@ export default function Knowledges() {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <Atom  size={16} /> Saiba mais
+                        <Atom size={16} /> Saiba mais
                       </a>
                     )}
                     {item.certificateLink && (
