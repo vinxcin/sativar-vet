@@ -31,7 +31,7 @@ export default function About() {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl sm:text-4xl title mb-6"
+          className="text-2xl md:text-4xl title mb-6"
         >
           Sobre o projeto
         </motion.h1>
@@ -42,12 +42,12 @@ export default function About() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="max-w-[120vw] px-6 sm:px-8 lg:max-w-[89vw] mx-auto text-gray-300"
         >
-          <p className="text-xl leading-relaxed md:px-11 lg:px-80">
+          <p className="text-base md:text-xl leading-relaxed md:px-11 lg:px-80">
             <span className="font-bold italic">Viagem ao Céu Noturno </span>
             é um projeto educacional que une ciência, arte, cultura alternativa e o olhar ancestral para o céu, oferecendo vivências astronômicas por meio de observações com telescópios e apresentações sobre temas como buracos negros, ciclo de vida das estrelas e curiosidades do Universo!✨
           </p>
 
-          <p className="text-xl leading-relaxed md:px-11 lg:px-80 pt-10">
+          <p className="text-base md:text-xl leading-relaxed md:px-11 lg:px-80 pt-10">
             O projeto nasceu em 2019, ainda no início da graduação de seu idealizador, Vinicius Carvalho Rosa, como uma pesquisa educacional. Desde então, foram realizadas diversas atividades de observação do céu e apresentações sobre astronomia para estudantes de escolas públicas do litoral norte de São Paulo.
           </p>
         </motion.div>

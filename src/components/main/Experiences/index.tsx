@@ -34,8 +34,8 @@ export default function Experiences() {
         Vivências Cósmicas
       </h1>
 
-      <p className="text-xl leading-relaxed text-gray-300 lg:px-80 text-center mt-4 mb-8">
-        Hoje, esse projeto ganha novas formas e caminhos. Levamos a <span className="italic">Astronomia</span> para além das salas de aula — conduzimos essa <span className="italic">jornada</span> até os festivais, conectando <span className="font-bold bg-gradient-to-r from-blue-400 via-teal-400 to-green-400 bg-clip-text text-transparent">ciência</span>, <span className="font-bold bg-gradient-to-r from-yellow-400 via-red-400 to-pink-400 bg-clip-text text-transparent">arte</span> e <span className="font-bold bg-gradient-to-r from-indigo-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">cultura alternativa</span> em uma experiência única.
+      <p className="text-base md:text-lg leading-relaxed text-gray-300  lg:px-96 text-center mt-4 mb-8">
+        Hoje, esse projeto ganha novas formas e caminhos. Levamos a <span className="italic">Astronomia</span> para além das salas de aula — conduzindo essa <span className="italic">jornada</span> até os festivais, conectando <span className="font-bold bg-gradient-to-r from-blue-400 via-teal-400 to-green-400 bg-clip-text text-transparent">ciência</span>, <span className="font-bold bg-gradient-to-r from-yellow-400 via-red-400 to-pink-400 bg-clip-text text-transparent">arte</span> e <span className="font-bold bg-gradient-to-r from-indigo-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">cultura alternativa</span> em uma experiência única.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl w-full">
