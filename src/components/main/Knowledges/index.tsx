@@ -1,8 +1,8 @@
 'use client';
 
 import { KnowledgesCard } from '@/constants';
-import { BookOpen, Award, Mic } from 'lucide-react';
-
+import {  Award, Mic } from 'lucide-react';
+// BookOpen,
 export default function Knowledges() {
   return (
     <section id="knowledges" className="w-full bg-[#050111] px-6 py-16 flex flex-col items-center gap-12">
