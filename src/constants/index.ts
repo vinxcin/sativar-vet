@@ -1,18 +1,18 @@
-import {RUPESTRE_SOL, CONST_SARG, OBSERVACAO, BURACOS_NEGROS, CERT_MCTI_IMG, MINICURSO_ASTRO, CERT_NOITE_ESTRELAS_IMG} from '@/assets/img';
-import {CERT_MCTI,  CERT_NOITE_ESTRELAS} from '@/assets/file';
+import { RUPESTRE_SOL, ARTIGO_REVISTA_EXITUS, APRES_ESCOLA_CARLOTA, CONST_SARG, OBSERVACAO, BURACOS_NEGROS, CERT_MCTI_IMG, MINICURSO_ASTRO, CERT_NOITE_ESTRELAS_IMG } from '@/assets/img';
+import { CERT_MCTI, CERT_NOITE_ESTRELAS } from '@/assets/file';
 
 export const NavBarItens = [
-        { name: "Início", id: "home" },
-        { name: "Sobre o Projeto", id: "about" },
-        { name: "Vivências Cósmicas", id: "vivencias" },
-        { name: "Saberes", id: "knowledges" },
-        { name: "Contato", id: "contato" }
-    ];
+  { name: "Início", id: "home" },
+  { name: "Sobre o Projeto", id: "about" },
+  { name: "Vivências", id: "vivencias" },
+  { name: "Saberes", id: "knowledges" },
+  { name: "Contato", id: "contato" }
+];
 
 
 export const Images = [
-    { src: RUPESTRE_SOL, name: "pedra rupestre", top: "40%", left: "10%" },
-    { src: CONST_SARG, name: "Constelacao Sagittarius", top: "15%", left: "85%" }
+  { src: RUPESTRE_SOL, name: "pedra rupestre", top: "40%", left: "10%" },
+  { src: CONST_SARG, name: "Constelacao Sagittarius", top: "15%", left: "85%" }
 ];
 
 
@@ -35,15 +35,23 @@ export const Cards = [
 
 export const KnowledgesCard = [
   {
-    type: 'presentation',  
+    type: 'article',
+    image: ARTIGO_REVISTA_EXITUS,
+    title: 'Artigo científico publicado na Revista Exitus',
+    description: 'O Artigo intitulado "Possibilidades educacionais de uma atividade de divulgação científica sobre buracos negros", discute como a educação científica pode tornar o conhecimento astrofísico mais acessível e significativo para estudantes e público em geral.',
+    articleLink: 'https://portaldeperiodicos.ufopa.edu.br/index.php/revistaexitus/article/view/1647', // link para ler artigo
+    institutionalLink: "https://www.ifspcaraguatatuba.edu.br/noticias/revista-publica-artigo-de-graduado-pelo-ifsp-caraguatatuba-sobre-buracos-negros"
+  },
+  {
+    type: 'presentation',
     image: MINICURSO_ASTRO,
     title: '5º Minicurso de Astronomia: Buracos Negros',
     description:
-      'Apresentação sobre a primeira imagem registrada de um buraco negro na história da humanidade.',
+      'Participou da organização do 5º Minicurso de Astronomia do IFSP-Caraguatatuba, em maio de 2019, e apresentou uma palestra sobre a primeira imagem registrada de um buraco negro, contribuindo para a divulgação científica junto à comunidade local.',
     institutionalLink: 'https://www.ifspcaraguatatuba.edu.br/noticias/5-minicurso-de-astronomia-do-ifsp-caraguatatuba-contou-com-ampla-participacao', // matéria jornalística pela instituição
   },
-    {
-    type: 'course', 
+  {
+    type: 'course',
     image: CERT_MCTI_IMG,
     title: '1º Seminário Internacional: Astronomia e Astronáutica - MCTI',
     description:
@@ -52,7 +60,7 @@ export const KnowledgesCard = [
     certificateLink: CERT_MCTI, // certificado opcional
   },
   {
-    type: 'presentation',  
+    type: 'presentation',
     image: CERT_NOITE_ESTRELAS_IMG,
     title: 'VI Noite com as Estrelas: Buracos Negros',
     description: 'Ministrou a palestra “Buracos Negros” durante a VI Noite com as Estrelas, evento promovida pela EE Alcides de Castro Galvão, em 11 de novembro de 2020.',
@@ -62,21 +70,11 @@ export const KnowledgesCard = [
     // institutionalLink pode existir para a matéria da instituição
   },
   {
-    type: 'presentation',  
-    image: CERT_NOITE_ESTRELAS_IMG,
-    title: 'VI Noite com as Estrelas: Buracos Negros',
-    description: 'Ministrou a palestra “Buracos Negros” durante a VI Noite com as Estrelas, evento promovida pela EE Alcides de Castro Galvão, em 11 de novembro de 2020.',
-    institutionalLink: 'https://youtu.be/TqaeQxkWr50?si=XhpXHh4BGeBag2RS', // matéria jornalística pela instituição
-    certificateLink: CERT_NOITE_ESTRELAS, // certificado opcional
-    // certificateLink pode existir aqui também, caso tenha certificado
-    // institutionalLink pode existir para a matéria da instituição
-  },
-  {
-    type: 'article',  // tipo artigo científico
-    image: '/images/artigo1.jpg',
-    title: '',
-    description: 'Ministrou a palestra “Buracos Negros” durante a VI Noite com as Estrelas, promovida pela EE Alcides de Castro Galvão, em 11 de novembro de 2020.',
-    articleLink: 'https://revistaeduca.com/astronomia-cultural', // link para ler artigo
+    type: 'presentation',
+    image: APRES_ESCOLA_CARLOTA,
+    title: 'Apresentação sobre Buracos Negros na Escola Benedito Miguel Carlota',
+    description: 'Apresentação para estudantes do ensino médio, em Caraguatatuba, com uma atividade educativa sobre buracos negros. A abordagem acessível buscou despertar o interesse dos alunos por temas científicos e pelo universo.',
+    institutionalLink: 'https://www.ifspcaraguatatuba.edu.br/noticias/apresentacoes-cientificas-foram-feitas-em-escola-de-massaguacu', // matéria jornalística pela instituição
     // certificateLink pode existir aqui também, caso tenha certificado
     // institutionalLink pode existir para a matéria da instituição
   },

@@ -1,12 +1,10 @@
-'use client';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 
 import { motion } from 'framer-motion';
 
 import { KnowledgesCard } from '@/constants';
-import { Award, Mic, BookOpen } from 'lucide-react';
+import { Award, Atom , BookOpen } from 'lucide-react';
 
 
 export default function Knowledges() {
@@ -50,7 +48,7 @@ export default function Knowledges() {
             disableOnInteraction: false,
           }}
           // pagination={{ clickable: true }}
-          className="w-full pb-12" // Espaço extra para afastar as bolinhas
+        // Espaço extra para afastar as bolinhas
         >
           {KnowledgesCard.map((item, index) => (
             <SwiperSlide key={index}>
@@ -58,15 +56,15 @@ export default function Knowledges() {
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="relative rounded-xl p-[2px] overflow-hidden group h-full"
+                className="relative rounded-xl p-[2px] overflow-hidden group h-full hover:cursor-pointer"
               >
                 <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 via-pink-500 to-yellow-400 rounded-xl blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-500 z-0" />
 
-                <div className="relative z-10 bg-[#0e0a1e]/90 backdrop-blur-md rounded-xl p-4 shadow-md shadow-purple-500/25 border border-purple-900/40 flex flex-col items-start h-full min-h-[400px]">
+                <div className="relative z-10 bg-[#0e0a1e]/90 backdrop-blur-md rounded-xl p-4 shadow-md shadow-purple-500/25 border border-purple-900/40 flex flex-col items-start h-full min-h-[414px]">
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-40 object-contain rounded-md bg-[#1a1127] mb-3"
+                    className="w-full h-40 object-contain rounded-xl bg-[#1a1127] mb-3"
                   />
 
                   <h4 className="text-purple-100 title text-sm mb-1 leading-tight font-semibold">
@@ -95,7 +93,7 @@ export default function Knowledges() {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <Mic size={16} /> Saiba mais
+                        <Atom  size={16} /> Saiba mais
                       </a>
                     )}
                     {item.certificateLink && (
