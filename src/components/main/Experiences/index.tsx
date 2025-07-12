@@ -33,7 +33,7 @@ export default function Experiences() {
         Vivências Cósmicas
       </h1>
 
-      <p className="text-xl leading-relaxed text-gray-300 lg:px-80 text-center mt-6 mb-20">
+      <p className="text-xl leading-relaxed text-gray-300 lg:px-80 text-center mt-4 mb-8">
         Hoje, esse projeto ganha novas formas e caminhos. Levamos a <span className="italic">Astronomia</span> para além das salas de aula — conduzimos essa <span className="italic">jornada</span> até os festivais, conectando <span className="font-bold bg-gradient-to-r from-blue-400 via-teal-400 to-green-400 bg-clip-text text-transparent">ciência</span>, <span className="font-bold bg-gradient-to-r from-yellow-400 via-red-400 to-pink-400 bg-clip-text text-transparent">arte</span> e <span className="font-bold bg-gradient-to-r from-indigo-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">cultura alternativa</span> em uma experiência única.
       </p>
 
@@ -56,8 +56,8 @@ export default function Experiences() {
                 },
               })}
             >
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 via-pink-500 to-yellow-400 rounded-2xl blur-2xl opacity-30 z-0" />
-              <div className="relative bg-white/90 backdrop-blur-md rounded-2xl p-4 flex flex-col h-full z-10 shadow-md shadow-[#fd9a0c]/25">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 via-pink-500 to-yellow-400 rounded-2xl blur-2xl opacity-40 z-0" />
+              <div className="relative bg-white/90 backdrop-blur-md rounded-2xl p-4 flex flex-col h-full z-10 shadow-2xl shadow-[#fd9a0c]/25">
                 <img
                   src={card.image}
                   alt={card.title}
