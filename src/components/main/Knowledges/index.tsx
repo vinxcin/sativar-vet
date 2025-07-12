@@ -11,7 +11,7 @@ export default function Knowledges() {
   return (
     <section
       id="knowledges"
-      className="w-full  px-6 py-16 flex flex-col items-center gap-12"
+      className="w-full px-3 md:px-6 py-16 flex flex-col items-center gap-12"
     >
       <div className="w-full max-w-6xl text-center px-4 relative">
         <motion.h2
@@ -34,8 +34,8 @@ export default function Knowledges() {
           Educação.
         </motion.p>
 
-        <p className="flex items-center justify-center gap-2 mb-4 text-sm  text-cyan-600 italic">
-          Deslize para o lado <ArrowRight className="w-5 h-5 animate-bounce-x" /> ou aguarde o próximo card
+        <p className="flex items-center justify-center mb-4 gap-2 text-sm text-cyan-600 italic">
+          Deslize para o lado <ArrowRight className="w-4 h-4  animate-bounce-x" /> ou aguarde o próximo card
         </p>
 
         {/* Swiper Carrossel */}
