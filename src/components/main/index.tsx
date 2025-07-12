@@ -6,6 +6,7 @@ import About from "./About";
 import Experiences from "./Experiences";
 import BackgroundStars from "./BackgroundStars";
 import Knowledges from "./Knowledges";
+import Contact from "./Contact";
 
 export default function LandingPage() {
   const { ref: heroRef, inView: isHeroVisible } = useInView({
@@ -29,6 +30,7 @@ export default function LandingPage() {
         <About />
         <Experiences/>
         <Knowledges/>
+        <Contact/>
       </main>
     </div>
   );

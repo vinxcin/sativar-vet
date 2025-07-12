@@ -25,8 +25,9 @@ export default function Experiences() {
   return (
     <section
       id="vivencias"
-      className="relative min-h-screen w-full flex flex-col items-center justify-center px-6 py-16 bg-[#050111]"
+      className="relative min-h-screen w-full flex flex-col items-center justify-center px-6 py-16 bg-[#050111ce]"
     >
+      {/* bg-[#050111] */}
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 animate-glow" />
 
       <h1 className="title text-amber-50 text-2xl md:text-4xl font-bold tracking-wide">
@@ -74,7 +75,6 @@ export default function Experiences() {
           );
         })}
       </div>
-      <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 animate-glow" />
 
     </section>
   );

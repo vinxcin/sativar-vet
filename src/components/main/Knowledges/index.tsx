@@ -11,7 +11,7 @@ export default function Knowledges() {
   return (
     <section
       id="knowledges"
-      className="w-full px-3 md:px-6 py-16 flex flex-col items-center gap-12"
+      className="w-full bg-[#050111ce] px-3 md:px-6 py-16 flex flex-col items-center gap-12"
     >
       <div className="w-full max-w-6xl text-center px-4 relative">
         <motion.h2
@@ -115,6 +115,7 @@ export default function Knowledges() {
           ))}
         </Swiper>
       </div>
+
     </section>
   );
 }
