@@ -2,10 +2,9 @@ import { Instagram, Mail, Phone, Rocket, Sparkles } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer id="contato" className="bg-[#050111] text-white pt-16 px-6 md:px-12">
+    <footer id="contato" className="bg-[#050111] text-white pt-8 mt-16 px-6 md:px-12">
       <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 text-center md:text-left">
 
-        {/* Coluna 1 - Projeto */}
         <div>
           <h3 className="title text-xl mb-4 text-amber-50">Projeto</h3>
           <p className="text-sm text-gray-300 leading-relaxed">
@@ -15,7 +14,6 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Coluna 2 - Contato */}
         <div>
           <h3 className="title text-xl mb-4 text-amber-50">Redes e Contato</h3>
           <ul className="text-sm text-gray-300 leading-relaxed space-y-2">
@@ -42,7 +40,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Coluna 3 - Créditos */}
         <div>
           <h3 className=" title text-xl mb-4 text-amber-50">Créditos</h3>
           <ul className="text-sm text-gray-300 leading-relaxed space-y-2">
@@ -61,7 +58,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Rodapé final */}
       <div className="mt-4 pb-2 text-center text-[12px] md:text-sm text-gray-400">
         <div className="relative mb-2 top-0 left-0 w-full h-[0.8px] bg-gray-700 " />
         ©2025 Viagem ao Céu Noturno • Feito com 💜 sob as estrelas

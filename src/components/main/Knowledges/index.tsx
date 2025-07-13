@@ -11,7 +11,7 @@ export default function Knowledges() {
   return (
     <section
       id="saberes"
-      className="w-full  px-3 md:px-6 py-16 flex flex-col items-center gap-12"
+      className="w-full  px-3 md:px-6 py-32 flex flex-col items-center gap-12"
     >
       <div className="w-full max-w-6xl text-center px-4 py-12 relative bg-[#35385252] rounded-2xl">
         <motion.h2
