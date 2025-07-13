@@ -18,7 +18,7 @@ export default function Knowledges() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-amber-50 title text-2xl md:text-4xl font-bold mb-4"
+          className="text-white title text-2xl md:text-4xl font-bold mb-4"
         >
           Saberes Estelares
         </motion.h2>

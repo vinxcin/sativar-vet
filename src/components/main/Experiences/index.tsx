@@ -30,7 +30,7 @@ export default function Experiences() {
       {/* bg-[#050111] */}
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 animate-glow" />
 
-      <h1 className="title text-amber-50 text-2xl md:text-4xl font-bold tracking-wide">
+      <h1 className="title text-white text-2xl md:text-4xl font-bold tracking-wide">
         Vivências Cósmicas
       </h1>
 
