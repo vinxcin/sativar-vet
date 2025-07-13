@@ -3,10 +3,10 @@ import { CERT_MCTI, CERT_NOITE_ESTRELAS } from '@/assets/file';
 
 export const NavBarItens = [
   { name: "Início", id: "home" },
-  { name: "Sobre o Projeto", id: "about" },
+  { name: "Sobre o Projeto", id: "sobre" },
   { name: "Vivências", id: "vivencias" },
-  { name: "Saberes", id: "knowledges" },
-  { name: "Contato", id: "contact" }
+  { name: "Saberes", id: "saberes" },
+  { name: "Contato", id: "contato" }
 ];
 
 

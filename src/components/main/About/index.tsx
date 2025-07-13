@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 export default function About() {
   return (
-    <section id="about" className="relative h-full text-white py-40 text-center">
+    <section id="sobre" className="relative h-full text-white py-40 text-center">
       
       {/* Imagens animadas de fundo */}
       <div className="absolute inset-0 z-0 overflow-hidden">
