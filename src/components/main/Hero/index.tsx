@@ -2,7 +2,7 @@ import { ChevronDown } from "lucide-react";
 
 export default function Hero() {
   const scrollToSection = () => {
-    const section = document.getElementById("about");
+    const section = document.getElementById("sobre");
     if (section) {
       const yOffset = -1;
       const y =
