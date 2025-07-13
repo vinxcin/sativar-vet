@@ -4,14 +4,14 @@ export default function Footer() {
   return (
     <footer id="contato" className="bg-[#050111] text-white pt-16 px-6 md:px-12">
       <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 text-center md:text-left">
-        
+
         {/* Coluna 1 - Projeto */}
         <div>
           <h3 className="title text-xl mb-4 text-amber-50">Projeto</h3>
           <p className="text-sm text-gray-300 leading-relaxed">
             <strong>Viagem ao Céu Noturno</strong><br />
             Educação, arte e cultura alternativa<br />
-            Desde 2019 🌌 
+            Desde 2019 🌌
           </p>
         </div>
 
@@ -62,7 +62,8 @@ export default function Footer() {
       </div>
 
       {/* Rodapé final */}
-      <div className="mt-12 mb-6 text-center text-[12px] md:text-sm text-gray-400">
+      <div className="mt-4 pb-2 text-center text-[10px] md:text-sm text-gray-400">
+        <div className="relative mb-2 top-0 left-0 w-full h-[0.8px] bg-gray-700 " />
         ©2025 Viagem ao Céu Noturno • Feito com 💜 sob as estrelas
       </div>
     </footer>
