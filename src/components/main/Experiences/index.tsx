@@ -11,9 +11,8 @@ export default function Experiences() {
       setIsDesktop(window.innerWidth >= 1024); // lg breakpoint
     };
 
-    handleResize(); // chama uma vez no carregamento
-    window.addEventListener('resize', handleResize); // escuta resize
-
+    handleResize();
+    window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
@@ -25,25 +24,38 @@ export default function Experiences() {
   return (
     <section
       id="vivencias"
-      className="relative min-h-screen w-full flex flex-col items-center justify-center px-6 pt-18 pb-32 bg-[#050111ce]"
+      className="relative min-h-screen w-full flex flex-col items-center justify-center px-6 pt-20 pb-32 bg-[#050111ce]"
     >
-      {/* bg-[#050111] */}
+      {/* Linhas de topo e base */}
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 animate-glow" />
 
-      <h1 className="title text-white text-2xl md:text-4xl font-bold tracking-wide">
+      {/* Título com animação */}
+      <motion.h1
+        className="title text-white text-2xl md:text-4xl font-bold tracking-wide"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
         Vivências Cósmicas
-      </h1>
+      </motion.h1>
 
-      <p className="text-base md:text-lg leading-relaxed text-gray-300  lg:px-96 text-center mt-4 mb-8">
+      {/* Parágrafo com animação */}
+      <motion.p
+        className="text-base md:text-lg leading-relaxed text-gray-300 lg:px-96 text-center mt-4 mb-8"
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+      >
         Hoje, esse projeto ganha novas formas e caminhos. Levamos a <span className="italic">Astronomia</span> para além das salas de aula — conduzindo essa <span className="italic">jornada</span> até os festivais, conectando <span className="font-bold bg-gradient-to-r from-blue-400 via-teal-400 to-green-400 bg-clip-text text-transparent">ciência</span>, <span className="font-bold bg-gradient-to-r from-yellow-400 via-red-400 to-pink-400 bg-clip-text text-transparent">arte</span> e <span className="font-bold bg-gradient-to-r from-indigo-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">cultura alternativa</span> em uma experiência única.
-      </p>
+      </motion.p>
 
+      {/* Grid de cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl w-full">
         {Cards.map((card, index) => {
-          const CardWrapper = isDesktop ? motion.div : 'div';
+          const Wrapper = isDesktop ? motion.div : 'div';
 
           return (
-            <CardWrapper
+            <Wrapper
               key={index}
               className="relative rounded-2xl p-[2px] overflow-hidden group"
               {...(isDesktop && {
@@ -51,10 +63,11 @@ export default function Experiences() {
                 initial: 'hidden',
                 whileInView: 'visible',
                 transition: {
-                  duration: 0.4,
+                  duration: 0.5,
                   ease: 'easeOut',
                   delay: index * 0.15,
                 },
+                viewport: { once: true },
               })}
             >
               <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 via-pink-500 to-yellow-400 rounded-2xl blur-2xl opacity-40 z-0" />
@@ -71,12 +84,13 @@ export default function Experiences() {
                   {card.description}
                 </p>
               </div>
-            </CardWrapper>
+            </Wrapper>
           );
         })}
-        <div className="absolute bottom-0 left-0 w-full h-[0.8px] bg-gradient-to-r from-purple-500 via-green-400 to-green-500 animate-glow" />
       </div>
 
+      {/* Linha de base */}
+      <div className="absolute bottom-0 left-0 w-full h-[0.8px] bg-gradient-to-r from-purple-500 via-green-400 to-green-500 animate-glow" />
     </section>
   );
 }
