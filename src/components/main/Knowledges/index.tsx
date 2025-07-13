@@ -11,9 +11,9 @@ export default function Knowledges() {
   return (
     <section
       id="knowledges"
-      className="w-full bg-[#050111ce] px-3 md:px-6 py-16 flex flex-col items-center gap-12"
+      className="w-full  px-3 md:px-6 py-16 flex flex-col items-center gap-12"
     >
-      <div className="w-full max-w-6xl text-center px-4 relative">
+      <div className="w-full max-w-6xl text-center px-4 py-12 relative bg-[#35385252] rounded-2xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -6,7 +6,7 @@ import About from "./About";
 import Experiences from "./Experiences";
 import BackgroundStars from "./BackgroundStars";
 import Knowledges from "./Knowledges";
-import Contact from "./Contact";
+import Contact from "./Footer";
 
 export default function LandingPage() {
   const { ref: heroRef, inView: isHeroVisible } = useInView({

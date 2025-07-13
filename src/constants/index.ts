@@ -1,4 +1,4 @@
-import { RUPESTRE_SOL, ARTIGO_REVISTA_EXITUS, APRES_ESCOLA_CARLOTA, CONST_SARG, OBSERVACAO, BURACOS_NEGROS, CERT_MCTI_IMG, MINICURSO_ASTRO, CERT_NOITE_ESTRELAS_IMG } from '@/assets/img';
+import { RUPESTRE_SOL, ARTIGO_REVISTA_RBECM, ARTIGO_REVISTA_EXITUS, APRES_ESCOLA_CARLOTA, CONST_SARG, OBSERVACAO, BURACOS_NEGROS, CERT_MCTI_IMG, MINICURSO_ASTRO, CERT_NOITE_ESTRELAS_IMG } from '@/assets/img';
 import { CERT_MCTI, CERT_NOITE_ESTRELAS } from '@/assets/file';
 
 export const NavBarItens = [
@@ -47,7 +47,7 @@ export const KnowledgesCard = [
     image: MINICURSO_ASTRO,
     title: '5º Minicurso de Astronomia: Buracos Negros',
     description:
-      'Participou da organização do 5º Minicurso de Astronomia do IFSP-Caraguatatuba, em maio de 2019, e apresentou uma palestra sobre a primeira imagem registrada de um buraco negro, contribuindo para a divulgação científica junto à comunidade local.',
+    'Participou da organização do 5º Minicurso de Astronomia do IFSP-Caraguatatuba, em maio de 2019, e apresentou uma palestra sobre a primeira imagem registrada de um buraco negro, contribuindo para a divulgação científica junto à comunidade local.',
     institutionalLink: 'https://www.ifspcaraguatatuba.edu.br/noticias/5-minicurso-de-astronomia-do-ifsp-caraguatatuba-contou-com-ampla-participacao', // matéria jornalística pela instituição
   },
   {
@@ -55,7 +55,7 @@ export const KnowledgesCard = [
     image: CERT_MCTI_IMG,
     title: '1º Seminário Internacional: Astronomia e Astronáutica - MCTI',
     description:
-      'Participação em evento do MCTI voltado à divulgação científica em astronomia, astronáutica e educação, com especialistas de instituições nacionais e internacionais.',
+    'Participação em evento do MCTI voltado à divulgação científica em astronomia, astronáutica e educação, com especialistas de instituições nacionais e internacionais.',
     institutionalLink: 'https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/2021/06/1o-seminario-internacional-de-astronomia-e-astronautica-mcti-comeca-nesta-terca-feira-8', // matéria jornalística pela instituição
     certificateLink: CERT_MCTI, // certificado opcional
   },
@@ -77,5 +77,12 @@ export const KnowledgesCard = [
     institutionalLink: 'https://www.ifspcaraguatatuba.edu.br/noticias/apresentacoes-cientificas-foram-feitas-em-escola-de-massaguacu', // matéria jornalística pela instituição
     // certificateLink pode existir aqui também, caso tenha certificado
     // institutionalLink pode existir para a matéria da instituição
+  },
+  {
+    type: 'article',
+    image: ARTIGO_REVISTA_RBECM,
+    title: 'Artigo científico publicado na Revista Brasileira de Ensino de Ciências e Matemática',
+    description: 'O artigo intitulado "BURACOS NEGROS, HISTÓRIA DA CIÊNCIA E ENSINO DE FÍSICA" analisa o uso dos buracos negros como tema interdisciplinar no ensino de física, com base em sua evolução histórica e potencial educativo.',
+    articleLink: 'https://seer.upf.br/index.php/rbecm/article/view/12927', // link para ler artigo
   },
 ];

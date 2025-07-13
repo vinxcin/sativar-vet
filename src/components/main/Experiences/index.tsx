@@ -74,6 +74,7 @@ export default function Experiences() {
             </CardWrapper>
           );
         })}
+        <div className="absolute bottom-0 left-0 w-full h-[0.8px] bg-gradient-to-r from-purple-500 via-green-400 to-green-500 animate-glow" />
       </div>
 
     </section>
