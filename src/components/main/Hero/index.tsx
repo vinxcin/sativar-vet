@@ -1,36 +1,55 @@
-import { ChevronDown } from "lucide-react";
+import { BG_HOME, DRA_LETICIA } from "@/assets/img";
 
 export default function Hero() {
-  const scrollToSection = () => {
-    const section = document.getElementById("sobre");
-    if (section) {
-      const yOffset = -1;
-      const y =
-        section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      window.scrollTo({ top: y, behavior: "smooth" });
-    }
-  };
-
   return (
-    <section id="home" className="relative flex flex-col h-[80vh] w-full px-4 lg:px-12">
-      <div className="flex flex-col text-center justify-center items-center h-full">
-        <h1 className="text-[2.8rem] leading-[3.2rem] md:leading-[4.6rem] md:text-5xl lg:text-6xl title bg-gradient-to-r from-purple-400 via-pink-400 to-orange-300 bg-clip-text text-transparent">
-          Viagem ao Céu Noturno
-        </h1>
+  <section className="h-screen flex items-center bg-cover bg-center bg-no-repeat px-6 md:px-12 relative"
+  style={{ backgroundImage: `url(${BG_HOME})` }}>
+    
+  <div className="absolute inset-0 bg-emerald-950/50"></div>
 
-        <p className="text-lg text-gray-300 opacity-90 pt-2 max-w-xl">
-          A ponte entre o conhecimento ancestral e a exploração do cosmos
-        </p>
-      </div>
+  <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
+    
+    <div className="flex-1 text-center md:text-left">
+      <h1 className="font-heading text-4xl md:text-4xl font-bold text-white drop-shadow-lg mb-4">
+        Cuidado natural, ciência que transforma!
+      </h1>
 
-      {/* Chevron fixado no rodapé da seção */}
-      <div className="absolute bottom-[-0vh] left-0 right-0 flex justify-center">
-        <ChevronDown
-          onClick={scrollToSection}
-          className="animate-bounce text-white/70 hover:text-purple-600 transition cursor-pointer"
-          size={40}
-        />
-      </div>
-    </section>
+      <p className="text-gray-200 text-lg md:text-xl leading-relaxed">
+        Na <span className="font-semibold text-green-300">Sativar Vet</span>, acreditamos que cada pet é único
+        e merece ser cuidado com o olhar integrativo que respeita suas individualidades!
+        <br />
+        <br />
+        A Dra. Leticia Holanda, especializada em{" "}
+        <span className="font-medium">Endocanabinologia Veterinária</span>, utiliza terapias naturais que
+        trazem o equilíbrio da natureza para a vida do seu pet.
+      </p>
+  
+      <a href="https://wa.me/5511998394408" target="_blank">
+        <button
+          className="relative hover:cursor-pointer mt-6 px-6 py-3 rounded-lg font-medium bg-green-600 text-white overflow-hidden hover:scale-105 transition-transform duration-300">
+
+          <span className="relative z-10">Agende uma consulta</span>
+          <span
+            className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-green-400 via-emerald-500 to-green-400"
+          ></span>
+        </button>
+      </a>
+    </div>
+
+
+
+    <div className="flex-1 flex justify-center md:justify-end">
+      <img
+        src={DRA_LETICIA}
+        alt="Dra. Letícia Holanda com um pet"
+        className="w-80 md:w-[520px] rounded-2xl  object-cover"
+      />
+    </div>
+
+  </div>
+
+
+</section>
+
   );
 }

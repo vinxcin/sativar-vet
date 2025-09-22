@@ -7,8 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Quicksand', 'sans-serif'], // para textos gerais
-        zen: ['Zen Dots', 'cursive'],      // para títulos
+        sans: ['Inter', 'sans-serif'], // para textos
+        heading: ['Poppins', 'sans-serif'], // para títulos
       },
     },
   },

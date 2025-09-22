@@ -1,81 +1,52 @@
 import { useState } from "react";
-import { NavBarItens } from "@/constants";
-import { Menu, X, Instagram } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
-import { LOGO_NAV_BAR } from "@/assets/img";
 
 export default function NavBar() {
   const [menuOpened, setMenuOpened] = useState(false);
-  const toggleMenu = () => setMenuOpened(!menuOpened);
-  const closeMenu = () => setMenuOpened(false);
 
   return (
-    <nav className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50">
-      <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[16px] md:px-12">
-        <a href="#home" className="group h-auto w-auto flex flex-row items-center">
-          <img
-            src={LOGO_NAV_BAR}
-            alt="LOGO_NAV_BAR"
-            width={40}
-            height={40}
-            className="cursor-pointer  "
-          />
-        </a>
+    <nav className="w-full bg-white shadow-md fixed top-0 z-50">
+      <div className="max-w-7xl mx-auto  py-4 flex justify-between items-center">
 
-        <div className="hidden md:flex md:w-[600px] lg:w-[620px] h-full flex-row items-center justify-between">
-          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#03001490] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
-            {NavBarItens.map((item) => (
-              <a
-                key={item.id}
-                href={`#${item.id}`}
-                className="font-medium cursor-pointer hover:text-[#fd9a0c]"
-              >
-                {item.name}
-              </a>
-            ))}
-          </div>
-        </div>
+        <div className="text-2xl font-bold text-green-600">Sativar Vet</div>
 
-        <div className="hidden md:flex flex-row gap-5">
-          <a className="cursor-pointer text-white hover:text-[#7042f8f4]" href={"https://www.instagram.com/viagemaoceunoturno/"} target="_blank" rel="noreferrer">
-            <Instagram />
-          </a>
-        </div>
+        <ul className="hidden md:flex space-x-12">
+          {["Início", "S.E.C.", "Sobre a Vet.", "Serviços","Pacientes", "Contato"].map((item) => (
+            <li
+              key={item}
+              className="font-medium hover:text-green-600 cursor-pointer transition-colors"
+            >
+              {item}
+            </li>
+          ))}
+        </ul>
+
 
         <button
-          onClick={toggleMenu}
-          className="md:hidden text-gray-300 z-50"
-          aria-label="Menu"
-          aria-expanded={menuOpened}
-          aria-controls="mobile-menu"
+          onClick={() => setMenuOpened(!menuOpened)}
+          className="md:hidden focus:outline-none"
         >
-          {menuOpened ? <X size={28} /> : <Menu size={28} />}
+          {menuOpened ? (
+            <span className="text-3xl">&times;</span> 
+          ) : (
+            <span className="text-3xl">&#9776;</span> 
+          )}
         </button>
       </div>
 
-      <AnimatePresence>
-        {menuOpened && (
-          <motion.div
-            id="mobile-menu"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3 }}
-            className="md:hidden flex flex-col items-center gap-16 h-[100vh] pt-20 bg-[#09031d] "
-          >
-            {NavBarItens.map((item) => (
-              <a
-                key={item.id}
-                href={`#${item.id}`}
-                onClick={closeMenu}
-                className="text-gray-200 text-2xl hover:text-purple-400 transition-all duration-300"
+      {menuOpened && (
+        <div className="md:hidden bg-white border-t shadow-md">
+          <ul className="flex flex-col space-y-4 p-4">
+            {["Início", "S.E.C.", "Sobre mim", "Pacientes", "Contato"].map((item) => (
+              <li
+                key={item}
+                className="font-semibold hover:text-green-600 cursor-pointer transition-colors"
               >
-                {item.name}
-              </a>
+                {item}
+              </li>
             ))}
-          </motion.div>
-        )}
-      </AnimatePresence>
+          </ul>
+        </div>
+      )}
     </nav>
   );
 }
