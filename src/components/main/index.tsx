@@ -6,7 +6,7 @@ export default function LandingPage() {
 
   return (
 
-    <main className="h-[200vh] ">
+    <main className="h-[400vh] ">
       <NavBar />
       <Hero />
       <Sec />

@@ -1,7 +1,10 @@
+import { BG_ABOUT, DRA_LETICIA } from "@/assets/img";
+
 export default function Sec() {
   return (
-    <section className="min-h-[60vh] md:min-h-[80vh] flex justify-center items-center px-6 py-12">
-      <div className="w-full max-w-5xl bg-[#E2FADB] rounded-2xl shadow-lg p-10 md:p-16 text-center space-y-6">
+    <section className="min-h-[60vh] md:min-h-[80vh] flex justify-center items-center px-6 py-12 ">
+      <div className="w-full max-w-5xl bg-cover bg-center bg-no-repeat  bg-[#FAFAFA] rounded-2xl shadow-lg p-10 md:p-16 text-center space-y-6">
+      {/*   <div className="absolute inset-0 bg-emerald-950/50"></div> */}
         
         <h1 className="font-heading font-semibold tex text-3xl md:text-5xl text-green-600">
           Sistema Endocanabinoide (SEC)

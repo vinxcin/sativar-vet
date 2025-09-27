@@ -2,8 +2,9 @@ import { BG_HOME, DRA_LETICIA } from "@/assets/img";
 
 export default function Hero() {
   return (
-  <section className="h-screen flex items-center bg-cover bg-center bg-no-repeat px-6 md:px-12 relative"
+  <section className="min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat px-6 md:px-12 relative"
   style={{ backgroundImage: `url(${BG_HOME})` }}>
+ 
     
   <div className="absolute inset-0 bg-emerald-950/50"></div>
 
@@ -26,15 +27,18 @@ export default function Hero() {
   
       <a href="https://wa.me/5511998394408" target="_blank">
         <button
-          className="relative hover:cursor-pointer mt-6 px-6 py-3 rounded-lg font-medium bg-green-600 text-white overflow-hidden hover:scale-105 transition-transform duration-300">
+          className="relative hover:cursor-pointer mt-6 px-8 py-3 rounded-lg font-medium  bg-green-600 text-white overflow-hidden hover:scale-105 hover:bg-green-900 transition-transform duration-300">
 
           <span className="relative z-10">Agende uma consulta</span>
           <span
-            className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r from-green-400 via-emerald-500 to-green-400"
+            className="absolute inset-0 rounded-lg p-[2px] hover:bg-green-950 bg-gradient-to-r from-green-400 via-emerald-500 to-green-400"
           ></span>
         </button>
       </a>
+    
+    
     </div>
+    
 
 
 
@@ -42,7 +46,7 @@ export default function Hero() {
       <img
         src={DRA_LETICIA}
         alt="Dra. Letícia Holanda com um pet"
-        className="w-80 md:w-[520px] rounded-2xl  object-cover"
+        className="w-80 md:w-[580px] rounded-2xl object-cover"
       />
     </div>
 
