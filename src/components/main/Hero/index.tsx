@@ -6,7 +6,7 @@ export default function Hero() {
   style={{ backgroundImage: `url(${BG_HOME})` }}>
  
     
-  <div className="absolute inset-0 bg-emerald-950/50"></div>
+  <div className="absolute inset-0 bg-emerald-950/70"></div>
 
   <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
     
@@ -35,7 +35,6 @@ export default function Hero() {
           ></span>
         </button>
       </a>
-    
     
     </div>
     
