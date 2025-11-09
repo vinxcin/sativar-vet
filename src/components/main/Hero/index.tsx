@@ -2,57 +2,56 @@ import { BG_HOME, DRA_LETICIA } from "@/assets/img";
 
 export default function Hero() {
   return (
-  <section className="min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat px-6 md:px-12 relative"
-  style={{ backgroundImage: `url(${BG_HOME})` }}>
- 
-    
-  <div className="absolute inset-0 bg-emerald-950/70"></div>
+    <section
+      className="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat overflow-hidden"
+      style={{ backgroundImage: `url(${BG_HOME})` }}
+    >
+      {/* Overlay escuro */}
+      <div className="absolute inset-0 bg-emerald-950/80"></div>
 
-  <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
-    
-    <div className="flex-1 text-center md:text-left">
-      <h1 className="font-heading text-4xl md:text-4xl font-bold text-white drop-shadow-lg mb-4">
-        Cuidado natural, ciência que transforma!
-      </h1>
+      {/* Conteúdo principal — posicionado à esquerda */}
+      <div className="absolute mx-6 lg:left-[8vw] top-1/2 -translate-y-1/2 max-w-3xl z-10 text-left">
 
-      <p className="text-gray-200 text-lg md:text-xl leading-relaxed">
-        Na <span className="font-semibold text-green-300">Sativar Vet</span>, acreditamos que cada pet é único
-        e merece ser cuidado com o olhar integrativo que respeita suas individualidades!
-        <br />
-        <br />
-        A Dra. Leticia Holanda, especializada em{" "}
-        <span className="font-medium">Endocanabinologia Veterinária</span>, utiliza terapias naturais que
-        trazem o equilíbrio da natureza para a vida do seu pet.
-      </p>
-  
-      <a href="https://wa.me/5511998394408" target="_blank">
-        <button
-          className="relative hover:cursor-pointer mt-6 px-8 py-3 rounded-lg font-medium  bg-green-600 text-white overflow-hidden hover:scale-105 hover:bg-green-900 transition-transform duration-300">
+        <div className="lg:max-w-[40vw]">
+          <h1 className="font-heading text-2xl lg:text-4xl font-bold text-white drop-shadow-lg mb-4 leading-snug">
+            Cuidado natural, ciência que transforma!
+          </h1>
 
-          <span className="relative z-10">Agende uma consulta</span>
-          <span
-            className="absolute inset-0 rounded-lg p-[2px] hover:bg-green-950 bg-gradient-to-r from-green-400 via-emerald-500 to-green-400"
-          ></span>
-        </button>
-      </a>
-    
-    </div>
-    
+          <p className="text-gray-100/90 text-lg md:text-xl leading-relaxed mb-8">
+            Na <span className="font-semibold text-green-300">Sativar Vet</span>, acreditamos que cada pet é único
+            e merece ser cuidado com o olhar integrativo que respeita suas individualidades!
+            <br />
+            <br />
+            A Dra. Leticia Holanda, especializada em{" "}
+            <span className="font-medium text-green-200">Endocanabinologia Veterinária</span>, utiliza terapias naturais que
+            trazem o equilíbrio da natureza para a vida do seu pet.
+          </p>
 
+          <a href="https://wa.me/5511998394408" target="_blank" rel="noopener noreferrer">
+            <button
+              className="
+                w-full lg:w-[18.5vw] h-14 hover:cursor-pointer rounded-lg font-semibold text-green-100
+                bg-gradient-to-r from-green-800 via-emerald-700 to-green-800
+                hover:from-emerald-600 hover:to-green-700
+                border border-green-400/30
+                shadow-md hover:shadow-lg hover:shadow-green-700/30
+                transition-all duration-300 ease-out
+              "
+            >
+              Agende uma consulta
+            </button>
+          </a>
+        </div>
+      </div>
 
-
-    <div className="flex-1 flex justify-center md:justify-end">
-      <img
-        src={DRA_LETICIA}
-        alt="Dra. Letícia Holanda com um pet"
-        className="w-80 md:w-[580px] rounded-2xl object-cover"
-      />
-    </div>
-
-  </div>
-
-
-</section>
-
+      {/* Imagem fixa no rodapé direito */}
+      <div className="hidden md:block absolute bottom-0 right-0 z-20">
+        <img
+          src={DRA_LETICIA}
+          alt="Dra. Letícia Holanda com um pet"
+          className="sm:w-[52vw] md:w-[72vw] lg:w-[42vw] lg:max-w-[650px] object-contain rounded-t-2xl drop-shadow-2xl translate-y-[10%] mr-14"
+        />
+      </div>
+    </section>
   );
 }

@@ -25,10 +25,24 @@
   font-family: 'Inter', sans-serif;
 }
 
-::-webkit-scrollbar{width: 0.6vw; height: .6vh; background: #E2FADB}
-::-webkit-scrollbar-thumb{background: linear-gradient(to bottom, #E2FADB, #DBEFBC); border-radius: 5px;}
+::-webkit-scrollbar{width: 0.6vw; height: .6vh; background: #b0e8a0}
+::-webkit-scrollbar-thumb{background: linear-gradient(to bottom,  #006a36); border-radius: 5px;}
 
 *::selection  {
-  background: #E2FADB;
+  background: #668974d9;
 } 
 
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.animate-slideIn {
+  animation: slideIn 0.45s cubic-bezier(.2,.9,.3,1) forwards;
+}
