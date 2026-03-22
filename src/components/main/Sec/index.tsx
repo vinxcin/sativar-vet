@@ -43,7 +43,7 @@ export default function Sec() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}
-          className="text-4xl text-[#1c8646] font-bold bg-clip-text drop-shadow-lg tracking-wide flex justify-center items-center gap-3">
+          className="title text-4xl text-[#1c8646] font-bold bg-clip-text drop-shadow-lg tracking-wide flex justify-center items-center gap-3">
           <Leaf className="text-green-700 w-8 h-8 md:w-10 md:h-10 animate-pulse" />
           Sistema Endocanabinoide (SEC)
         </motion.h1>
@@ -52,7 +52,7 @@ export default function Sec() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}
-          className="text-gray-700 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto"
+          className="text text-gray-700 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto"
         >
           O Sistema Endocanabinóide é o <b className="text-green-700">maestro da vida</b>, um mecanismo sábio e natural que orquestra o <b className="text-lime-600">equilíbrio</b> e a <b className="text-teal-700">harmonia</b> do organismo.
 
@@ -62,7 +62,7 @@ export default function Sec() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
-          className="text-gray-700 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto"
+          className="text text-gray-700 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto"
         >
           Esse sistema biológico, está presente em todo o corpo do seu pet: do cérebro à pele, conectando e comunicando cada sistema com precisão e inteligência natural.
         </motion.p>
@@ -74,10 +74,10 @@ export default function Sec() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="text-gray-700 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto"
+          className="text text-gray-700 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto"
         >
           O SEC atua como regulador da saúde e do bem-estar através dos{" "}
-          <span className="font-semibold text-gray-900">endocanabinóides</span>, substâncias naturais produzidas pelo próprio corpo, que realizam ajustes finos em funções vitais, equilibrando o organismo de forma suave e fisiológica.
+          <span className="text font-semibold text-gray-900">endocanabinóides</span>, substâncias naturais produzidas pelo próprio corpo, que realizam ajustes finos em funções vitais, equilibrando o organismo de forma suave e fisiológica.
         </motion.p>
 
         <motion.p

@@ -2,13 +2,13 @@
 module.exports = {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}", // garante que todos os seus arquivos React sejam processados
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'], // para textos
-        heading: ['Poppins', 'sans-serif'], // para títulos
+        sans: ['Quicksand', 'sans-serif'], // texto
+        heading: ['Cormorant', 'serif'],   // títulos orgânicos
       },
     },
   },

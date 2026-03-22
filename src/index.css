@@ -4,7 +4,7 @@
 @import 'swiper/css/pagination';
 
 :root {
-  font-family: 'Quicksand', sans-serif;
+  /* font-family: 'Quicksand', sans-serif; */
 
   /* color-scheme: light dark; */
   /* color: rgba(255, 255, 255, 0.87); */
@@ -17,12 +17,12 @@
 }
 
 .title {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Righteous', cursive;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); /* opcional, mantém destaque */
 }
 
 .text {
-  font-family: 'Inter', sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 ::-webkit-scrollbar{width: 0.6vw; height: .6vh; background: #b0e8a0}
