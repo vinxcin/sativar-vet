@@ -1,121 +1,106 @@
 import { motion } from "framer-motion";
-import { Leaf, Heart, PawPrint } from "lucide-react";
+import { Leaf, Heart, Brain, Sparkles } from "lucide-react";
 
 export default function Sec() {
+  const cards = [
+    {
+      icon: <Sparkles className="w-6 h-6 text-green-600" />,
+      title: "Equilíbrio Natural",
+      text: (
+        <>
+          O Sistema Endocanabinóide é o{" "}
+          <b className="text-green-700">maestro da vida</b>, promovendo{" "}
+          <b className="text-lime-600">equilíbrio</b> e{" "}
+          <b className="text-teal-700">harmonia</b> no organismo.
+        </>
+      ),
+    },
+    {
+      icon: <Brain className="w-6 h-6 text-emerald-600" />,
+      title: "Conexão Inteligente",
+      text: (
+        <>
+          Presente em todo o corpo do seu pet, conecta sistemas do cérebro à
+          pele com precisão e inteligência natural.
+        </>
+      ),
+    },
+    {
+      icon: <Heart className="w-6 h-6 text-green-500" />,
+      title: "Regulação Vital",
+      text: (
+        <>
+          Atua por meio dos{" "}
+          <span className="font-semibold text-gray-900">
+            endocanabinóides
+          </span>
+          , equilibrando funções vitais de forma suave e fisiológica.
+        </>
+      ),
+    },
+    {
+      icon: <Leaf className="w-6 h-6 text-lime-600" />,
+      title: "Bem-estar Integrativo",
+      text: (
+        <>
+          Modular o SEC promove vitalidade, longevidade e qualidade de vida com
+          hábitos e escolhas conscientes.
+        </>
+      ),
+    },
+  ];
+
   return (
-    <section className="relative min-h-[90vh] flex justify-center items-center px-6 py-20 overflow-hidden bg-gradient-to-b from-[#375342] to-[#3753423f]">
+    <section className="relative min-h-[90vh] flex justify-center items-center px-6 py-20 overflow-hidden">
 
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[1.2px] bg-gradient-to-r from-[#3d604b] via-emerald-500  rounded-full"></div>
-
+      {/* container */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 2 }}
-        className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(74,222,128,0.15),_transparent_60%)]"
-      />
-
-      <motion.div
-        className="absolute -top-20 -left-32 w-96 h-96 bg-green-200/30 rounded-full blur-3xl"
-        animate={{
-          x: [0, 20, 0],
-          y: [0, -15, 0],
-        }}
-        transition={{ repeat: Infinity, duration: 12, ease: "easeInOut" }}
-      />
-      <motion.div
-        className="absolute bottom-0 right-0 w-[28rem] h-[28rem] bg-emerald-300/20 rounded-full blur-3xl"
-        animate={{
-          x: [0, -25, 0],
-          y: [0, 15, 0],
-        }}
-        transition={{ repeat: Infinity, duration: 14, ease: "easeInOut" }}
-      />
-
-
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-        className="relative w-full max-w-5xl bg-emerald-100 backdrop-blur-md rounded-[2rem] shadow-2xl p-10  text-center space-y-8 border border-green-100"
+        className="relative w-full max-w-5xl bg-[#f7f2db]/80 backdrop-blur-xl rounded-[2rem] shadow-2xl p-10 text-center space-y-10 border border-green-100"
       >
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.8 }}
-          className="title text-4xl text-[#1c8646] font-bold bg-clip-text drop-shadow-lg tracking-wide flex justify-center items-center gap-3">
-          <Leaf className="text-green-700 w-8 h-8 md:w-10 md:h-10 animate-pulse" />
+        {/* título */}
+        <h1 className="title text-4xl text-[#1c8646] font-bold flex justify-center items-center gap-3">
+          <Leaf className="text-green-700 w-8 h-8 animate-pulse" />
           Sistema Endocanabinoide (SEC)
-        </motion.h1>
+        </h1>
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.8 }}
-          className="text text-gray-700 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto"
-        >
-          O Sistema Endocanabinóide é o <b className="text-green-700">maestro da vida</b>, um mecanismo sábio e natural que orquestra o <b className="text-lime-600">equilíbrio</b> e a <b className="text-teal-700">harmonia</b> do organismo.
+        {/* grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {cards.map((card, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.2 }}
+              viewport={{ once: true }}
+              className="group relative rounded-2xl p-[1px] bg-gradient-to-br from-green-200 via-emerald-200 to-lime-200 hover:from-green-400 hover:to-lime-300 transition-all duration-500"
+            >
+              <div className="h-full w-full bg-white/80 backdrop-blur-md rounded-2xl p-6 flex flex-col gap-3 shadow-md group-hover:shadow-xl transition-all">
 
-        </motion.p>
+                {/* ícone */}
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-xl bg-green-100 group-hover:scale-110 transition">
+                    {card.icon}
+                  </div>
+                  <h3 className="text-lg font-semibold text-green-800">
+                    {card.title}
+                  </h3>
+                </div>
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 0.8 }}
-          className="text text-gray-700 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto"
-        >
-          Esse sistema biológico, está presente em todo o corpo do seu pet: do cérebro à pele, conectando e comunicando cada sistema com precisão e inteligência natural.
-        </motion.p>
+                {/* texto */}
+                <p className="text-gray-700 text-sm md:text-[15px] leading-relaxed">
+                  {card.text}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
 
-
-
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
-          className="text text-gray-700 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto"
-        >
-          O SEC atua como regulador da saúde e do bem-estar através dos{" "}
-          <span className="text font-semibold text-gray-900">endocanabinóides</span>, substâncias naturais produzidas pelo próprio corpo, que realizam ajustes finos em funções vitais, equilibrando o organismo de forma suave e fisiológica.
-        </motion.p>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.8 }}
-          className="text-gray-700 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto"
-        >
-
-          Modular o SEC é promover saúde com propósito, cultivando vitalidade, longevidade, qualidade de vida e bem-estar através da nutrição do corpo e da mente com os estímulos adequados, bons hábitos e escolhas conscientes.
-        </motion.p>
-
-        {/* ✨ Ícones flutuantes */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.8, duration: 0.8 }}
-          className="flex justify-center items-center gap-6 pt-8 text-green-600"
-        >
-          <motion.div
-            animate={{ y: [0, -8, 0] }}
-            transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-          >
-            <Heart className="w-7 h-7 md:w-8 md:h-8" />
-          </motion.div>
-          <motion.div
-            animate={{ y: [0, -10, 0] }}
-            transition={{ repeat: Infinity, duration: 3.5, ease: "easeInOut" }}
-          >
-            <PawPrint className="w-7 h-7 md:w-8 md:h-8" />
-          </motion.div>
-          <motion.div
-            animate={{ y: [0, -7, 0] }}
-            transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-          >
-            <Leaf className="w-7 h-7 md:w-8 md:h-8" />
-          </motion.div>
-        </motion.div>
+        {/* detalhe final */}
+        <div className="flex justify-center items-center gap-6 pt-6 text-green-600 opacity-80">
+          <Heart className="w-6 h-6 animate-pulse" />
+          <Leaf className="w-6 h-6 animate-pulse delay-150" />
+          <Sparkles className="w-6 h-6 animate-pulse delay-300" />
+        </div>
       </motion.div>
     </section>
   );

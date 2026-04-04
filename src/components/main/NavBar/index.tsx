@@ -19,11 +19,11 @@ export default function NavBar() {
 
   const links = ["Início", "S.E.C.", "Sobre a Vet.", "Serviços", "Pacientes", "Contato"];
   const linkClass =
-    "relative text md:text-2xl lg:text-lg text-gray-100 hover:text-emerald-300 cursor-pointer transition-all duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:left-0 after:-bottom-1 after:bg-emerald-400 after:transition-all after:duration-300 lg:hover:after:w-full";
+    "relative text-button max-w-prose md:text-2xl lg:text-[18px] text-gray-100 hover:text-emerald-300 cursor-pointer transition-all duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:left-0 after:-bottom-1 after:bg-emerald-400 after:transition-all after:duration-300 lg:hover:after:w-full";
 
   return (
     <nav className="w-full fixed top-0 z-50 bg-white/10 backdrop-blur-md border-b border-white/20 shadow-lg">
-      <div className="max-w-7xl mx-auto flex justify-between items-center py-6 px-6  xl:py-4 xl:px-0">
+      <div className="px-32 flex justify-between items-center py-6 xl:py-4">
 
         {/* Logo */}
         <div className="title text-2xl xl:text-3xl font-extrabold bg-gradient-to-r from-green-500 via-emerald-400 to-lime-400 text-transparent bg-clip-text drop-shadow-lg tracking-wide">
@@ -33,7 +33,7 @@ export default function NavBar() {
         {/* Links desktop */}
         <ul className="hidden xl:flex space-x-10">
           {links.map((item) => (
-            <li key={item} className={linkClass}>{item}</li>
+            <li key={item} className= {linkClass}>{item}</li>
           ))}
 
         </ul>

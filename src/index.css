@@ -22,11 +22,14 @@
 }
 
 .text {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Comfortaa', sans-serif;
 }
 
-::-webkit-scrollbar{width: 0.6vw; height: .6vh; background: #b0e8a0}
-::-webkit-scrollbar-thumb{background: linear-gradient(to bottom,  #006a36); border-radius: 5px;}
+.text-button {
+  font-family: 'Exo', sans-serif;
+}
+::-webkit-scrollbar{width: 0.6vw; height: .6vh; background: #f7f2db70}
+::-webkit-scrollbar-thumb{background: linear-gradient(to bottom,  #006a36); border-radius: 2px;}
 
 *::selection  {
   background: #668974d9;

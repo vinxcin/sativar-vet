@@ -10,14 +10,14 @@ export default function Hero() {
       <div className="absolute inset-0 bg-emerald-950/80"></div>
 
       {/* Conteúdo principal — posicionado à esquerda */}
-      <div className="absolute mx-6 lg:left-[8vw] top-1/2 -translate-y-1/2 max-w-3xl z-10 text-left">
+      <div className="absolute pl-32 top-1/2 -translate-y-1/2 max-w-3xl z-10 text-left">
 
         <div className="lg:max-w-[40vw]">
           <h1 className="title text-2xl lg:text-4xl  text-white drop-shadow-lg mb-4 leading-snug">
             Cuidado natural, ciência que transforma!
           </h1>
 
-          <p className="text text-gray-100/90 text-lg md:text-xl leading-relaxed mb-8">
+          <p className="text text-gray-100/90 text-lg md:text-[18px] leading-relaxed mb-8">
             Na <span className="font-semibold text-green-300">Sativar Vet</span>, acreditamos que cada pet é único
             e merece ser cuidado com o olhar integrativo que respeita suas individualidades!
             <br />
@@ -29,7 +29,7 @@ export default function Hero() {
 
           <a href="https://wa.me/5511998394408" target="_blank" rel="noopener noreferrer">
             <button
-              className="
+              className="text-button
                 w-full lg:w-[18.5vw] h-14 hover:cursor-pointer rounded-lg font-semibold text-green-100
                 bg-gradient-to-r from-green-800 via-emerald-700 to-green-800
                 hover:from-emerald-600 hover:to-green-700
