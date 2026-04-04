@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-emerald-950/80"></div>
 
       {/* Conteúdo principal — posicionado à esquerda */}
-      <div className="absolute pl-32 top-1/2 -translate-y-1/2 max-w-3xl z-10 text-left">
+      <div className="absolute px-4 lg:pl-32 top-1/2 -translate-y-1/2 max-w-3xl z-10 text-left">
 
         <div className="lg:max-w-[40vw]">
           <h1 className="title text-2xl lg:text-4xl  text-white drop-shadow-lg mb-4 leading-snug">

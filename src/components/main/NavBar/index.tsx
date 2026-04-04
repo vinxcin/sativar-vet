@@ -23,7 +23,7 @@ export default function NavBar() {
 
   return (
     <nav className="w-full fixed top-0 z-50 bg-white/10 backdrop-blur-md border-b border-white/20 shadow-lg">
-      <div className="px-32 flex justify-between items-center py-6 xl:py-4">
+      <div className="px-4 lg:px-32 flex justify-between items-center py-6 xl:py-4">
 
         {/* Logo */}
         <div className="title text-2xl xl:text-3xl font-extrabold bg-gradient-to-r from-green-500 via-emerald-400 to-lime-400 text-transparent bg-clip-text drop-shadow-lg tracking-wide">

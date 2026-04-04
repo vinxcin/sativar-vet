@@ -40,7 +40,7 @@ export default function Sec() {
       text: (
         <>
           Modular o SEC é cultivar vitalidade, longevidade, qualidade de vida e
-          bem-estar com bons hábitos e escolhas conscientes.
+          bem-estar atráves da nutrição do corpo e da mente com estímulos adequados, bons hábitos e escolhas conscientes.
         </>
       ),
     },
@@ -56,7 +56,7 @@ export default function Sec() {
         viewport={{ once: true }}
         className="text-center max-w-2xl mx-auto mb-16"
       >
-        <h1 className="title text-4xl text-[#1c8646] flex justify-center items-center gap-3">
+        <h1 className="title text-xl lg:text-4xl text-[#1c8646] flex justify-center items-center gap-3">
           <Leaf className="w-8 h-8 text-green-700 animate-pulse" />
           Sistema Endocanabinoide (SEC)
         </h1>
