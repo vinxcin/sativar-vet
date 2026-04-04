@@ -22,9 +22,10 @@ export default function Hero() {
             e merece ser cuidado com o olhar integrativo que respeita suas individualidades!
             <br />
             <br />
-            A Dra. Leticia Holanda, especializada em{" "}
-            <span className="font-medium text-green-200">Endocanabinologia Veterinária</span>, utiliza terapias naturais que
-            trazem o equilíbrio da natureza para a vida do seu pet.
+            Nosso foco é restabelecer o equilíbrio natural do organismo, através de terapias naturais que modulam o Sistema Endocanabinóide, promovendo saúde com propósito.
+            {/* A Dra. Leticia Holanda, especializada em{" "} */}
+            {/* <span className="font-medium text-green-200">Endocanabinologia Veterinária</span>, utiliza terapias naturais que
+            trazem o equilíbrio da natureza para a vida do seu pet. */}
           </p>
 
           <a href="https://wa.me/5511998394408" target="_blank" rel="noopener noreferrer">

@@ -1,6 +1,8 @@
 import NavBar from "./NavBar";
 import Hero from "./Hero";
 import Sec from "./Sec";
+import AboutVet from "./AboutVet";
+
 
 export default function LandingPage() {
 
@@ -10,6 +12,7 @@ export default function LandingPage() {
       <NavBar />
       <Hero />
       <Sec />
+      <AboutVet/>
     </main>
   );
 }
