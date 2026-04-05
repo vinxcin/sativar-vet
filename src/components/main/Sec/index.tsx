@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { Leaf, HeartPulse, Stethoscope, Shield, Activity, ChevronDown, Moon, Smile, Flame, Heart, Brain, Sparkles, PawPrint, Eye } from "lucide-react";
+import { Leaf, HeartPulse, Stethoscope, Shield, ChevronDown, Moon, Smile, Flame, Heart, Brain, Sparkles, PawPrint, Eye } from "lucide-react";
 import { useState } from "react";
 
 export default function Sec() {
