@@ -17,7 +17,7 @@ export default function NavBar() {
     };
   }, []);
 
-  const links = ["Início", "S.E.C.", "Sobre a Vet.", "Serviços", "Pacientes", "Contato"];
+  const links = ["Início", "S.E.C.", "Sobre a Vet.", "Serviços", "Depoimentos", "Contato"];
   const linkClass =
     "relative text-button max-w-prose md:text-2xl lg:text-[18px] text-gray-100 hover:text-emerald-300 cursor-pointer transition-all duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:left-0 after:-bottom-1 after:bg-emerald-400 after:transition-all after:duration-300 lg:hover:after:w-full";
 
@@ -76,7 +76,7 @@ export default function NavBar() {
               ))}
             </ul>
 
-            <p className="absolute bottom-6 text-emerald-400 text-sm md:text-lg opacity-90">
+            <p className="pt-10 text-emerald-400 text-sm md:text-lg opacity-90">
               🌿 Cuidando com propósito
             </p>
           </aside>

@@ -50,13 +50,13 @@ export default function Sec() {
   const [open, setOpen] = useState(false);
 
   const items = [
-    { icon: <Flame />, text: "Doenças inflamatórias" },
     { icon: <Brain />, text: "Distúrbios neurológicos" },
-    { icon: <Shield />, text: "Distúrbios de imunidade e infecções" },
     { icon: <Smile />, text: "Transtornos comportamentais: Ansiedade, Estresse, Fobia..." },
     { icon: <HeartPulse />, text: "Alívio da dor crônica e aguda" },
-    { icon: <Stethoscope />, text: "Suporte oncológico e cuidados paliativos" },
     { icon: <Moon />, text: "Melhora do sono e cognição" },
+    { icon: <Flame />, text: "Doenças inflamatórias" },
+    { icon: <Shield />, text: "Distúrbios de imunidade e infecções" },
+    { icon: <Stethoscope />, text: "Suporte oncológico e cuidados paliativos" },
     { icon: <Leaf />, text: "Bem-estar e qualidade de vida" },
   ];
 
