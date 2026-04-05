@@ -1,4 +1,4 @@
-import { BG_HOME, DRA_LETICIA } from "@/assets/img";
+import { BG_HOME, LUNA } from "@/assets/img";
 
 export default function Hero() {
   return (
@@ -48,9 +48,9 @@ export default function Hero() {
       {/* Imagem fixa no rodapé direito */}
       <div className="hidden md:block absolute bottom-0 right-0 z-20">
         <img
-          src={DRA_LETICIA}
-          alt="Dra. Letícia Holanda com um pet"
-          className="sm:w-[52vw] md:w-[72vw] lg:w-[42vw] lg:max-w-[650px] object-contain rounded-t-2xl drop-shadow-2xl translate-y-[10%] mr-14"
+          src={LUNA}
+          alt="LUNA"
+          className="sm:w-[52vw] md:w-[72vw] lg:w-[42vw] lg:max-w-[650px] object-contain rounded-t-2xl drop-shadow-2xl translate-y-[10%] "
         />
       </div>
     </section>

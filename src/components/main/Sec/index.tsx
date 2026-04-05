@@ -6,11 +6,10 @@ export default function Sec() {
   const cards = [
     {
       icon: <Sparkles className="w-5 h-5 text-green-600" />,
-      title: "Equilíbrio Natural",
+      title: "Equilíbrio Fisiológico",
       text: (
         <>
-          Mecanismo natural que orquestra o
-          equilíbrio e harmonia do organismo.
+          Mecanismo natural que orquestra a harmonia do organismo.
         </>
       ),
     },
@@ -20,7 +19,7 @@ export default function Sec() {
       text: (
         <>
           Presente em todo o corpo do seu pet, conectando sistemas do cérebro à
-          pele com precisão natural.
+          pele com precisão.
         </>
       ),
     },
@@ -30,7 +29,7 @@ export default function Sec() {
       text: (
         <>
           Atua por meio dos{" "}
-          endocanabinóides, substâncias naturais produzidas pelo próprio corpo, regulando
+          endocanabinóides (substâncias naturais produzidas pelo próprio corpo), regulando
           funções vitais de forma suave e fisiológica.
         </>
       ),
@@ -41,7 +40,7 @@ export default function Sec() {
       text: (
         <>
           Modular o SEC é cultivar vitalidade, longevidade, qualidade de vida e
-          bem-estar atráves da nutrição do corpo e da mente com estímulos adequados, bons hábitos e escolhas conscientes.
+          bem-estar, atráves da nutrição do corpo e da mente com estímulos adequados, bons hábitos e escolhas conscientes!
         </>
       ),
     },
@@ -53,7 +52,7 @@ export default function Sec() {
     { icon: <Brain />, text: "Distúrbios neurológicos" },
     { icon: <Smile />, text: "Transtornos comportamentais: Ansiedade, Estresse, Fobia..." },
     { icon: <HeartPulse />, text: "Alívio da dor crônica e aguda" },
-    { icon: <Moon />, text: "Melhora do sono e cognição" },
+    { icon: <Moon />, text: "Melhora do sono, cognição e regulação do apetite" },
     { icon: <Flame />, text: "Doenças inflamatórias" },
     { icon: <Shield />, text: "Distúrbios de imunidade e infecções" },
     { icon: <Stethoscope />, text: "Suporte oncológico e cuidados paliativos" },
@@ -63,7 +62,7 @@ export default function Sec() {
   const moreItems = [
     "Controle de dermatites",
     "Alterações gastrointestinais",
-    "Regulação do apetite",
+    // "Regulação do apetite",
     "Doenças hepáticas (hepatopatias)",
     "Doenças renais (nefropatias)",
     "Doenças endócrinas e metabólicas",
@@ -167,7 +166,7 @@ export default function Sec() {
 
           {/* título */}
           <h2 className="text-button text-xl md:text-3xl text-center mb-12 leading-snug font-medium">
-            Modulando o SEC podemos corrigir desequilíbrios como:
+            Modulando o SEC, podemos corrigir desequilíbrios como:
           </h2>
 
           {/* lista */}
@@ -265,14 +264,3 @@ export default function Sec() {
 }
 
 
-
-// {/* CTA REAL */}
-//   <motion.button
-//     initial={{ opacity: 0, y: 10 }}
-//     whileInView={{ opacity: 1, y: 0 }}
-//     transition={{ delay: 0.3 }}
-//     whileHover={{ scale: 1.05 }}
-//     className="text-sm md:text-base bg-gradient-to-r from-lime-400 via-green-400 to-emerald-500 text-black font-semibold px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all"
-//   >
-//     Agendar avaliação para meu pet
-//   </motion.button>
