@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { DRA_LETICIA } from "./../../../assets/img";
-import { MessageCircle, Linkedin, Leaf } from "lucide-react";
+import { Linkedin, Leaf } from "lucide-react";
 
 export default function AboutVet() {
   return (
