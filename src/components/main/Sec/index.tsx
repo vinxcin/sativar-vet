@@ -54,7 +54,7 @@ export default function Sec() {
     { icon: <HeartPulse />, text: "Alívio da dor crônica e aguda" },
     { icon: <Moon />, text: "Melhora do sono, cognição e regulação do apetite" },
     { icon: <Flame />, text: "Doenças inflamatórias" },
-    { icon: <Shield />, text: "Distúrbios de imunidade, infecções e doenças dermatológicas" },
+    { icon: <Shield />, text: "Distúrbios de imunidade, doenças dermatológicas e infecciosas" },
     { icon: <Stethoscope />, text: "Suporte oncológico e cuidados paliativos" },
     { icon: <Leaf />, text: "Bem-estar e qualidade de vida" },
   ];
@@ -77,7 +77,7 @@ export default function Sec() {
         viewport={{ once: true }}
         className="text-center max-w-2xl mx-auto mb-16"
       >
-        <h1 className="title text-2xl lg:text-4xl text-[#1c8646] flex justify-center items-center gap-3">
+        <h1 className="title text-xl lg:text-4xl text-[#1c8646] flex justify-center items-center gap-3">
           <Leaf className="w-8 h-8 text-green-700 animate-pulse" />
           Sistema Endocanabinóide (SEC)
         </h1>
