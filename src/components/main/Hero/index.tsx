@@ -48,6 +48,7 @@ export default function Hero() {
       <div className="hidden md:block absolute bottom-0 right-0 z-20">
         <img
           src={LUNA}
+          loading="lazy"
           alt="LUNA"
           className="sm:w-[52vw] md:w-[72vw] lg:w-[38vw] lg:max-w-[650px] object-contain rounded-t-2xl drop-shadow-2xl translate-y-[10%] "
         />

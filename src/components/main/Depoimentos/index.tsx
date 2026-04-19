@@ -121,15 +121,12 @@ export default function Depoimentos() {
 
       {/* CTA */}
       <div className="mt-16 text-center">
-        {/* <p className="text-sm text-gray-300 mb-4">
-          Quer ver mais avaliações?
-        </p> */}
 
         <a
-          href="https://www.google.com/search?q=Dra+Letícia+Holanda+Reviews"
+          href="https://g.page/r/CfooHR58b7TsEAE/review"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium text-white bg-[#1c8646] hover:bg-green-700 transition"
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium text-gray-200 bg-[#1c8646] hover:bg-green-700 transition"
         >
           Ver mais avaliações!
         </a>

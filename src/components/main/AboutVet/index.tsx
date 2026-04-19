@@ -69,7 +69,7 @@ export default function AboutVet() {
           {/* badge */}
           <div className="flex justify-center md:justify-start">
             <span className="text-button inline-block text-emerald-200 text-xs sm:text-sm backdrop-blur-sm tracking-wide text-center">
-              Cuidado individualizado • Terapias naturais • Bem-estar animal
+              Cuidado individualizado • Terapias naturais • Bem-estar
             </span>
           </div>
 
