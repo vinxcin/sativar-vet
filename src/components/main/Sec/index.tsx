@@ -5,37 +5,57 @@ import { useState } from "react";
 export default function Sec() {
   const [open, setOpen] = useState(false);
 
-  const cards = [
+   const cards = [
     {
       icon: <Sparkles className="w-5 h-5 text-green-600" />,
       title: "Equilíbrio Fisiológico",
-      text: "Mecanismo natural que orquestra a harmonia do organismo.",
+      text: (
+        <>
+          Mecanismo natural que orquestra a harmonia do organismo.
+        </>
+      ),
     },
     {
       icon: <Brain className="w-5 h-5 text-emerald-600" />,
       title: "Conexão Inteligente",
-      text: "Presente em todo o corpo do seu pet, conectando sistemas do cérebro à pele com precisão.",
+      text: (
+        <>
+          Presente em todo o corpo do seu pet, conectando sistemas do cérebro à
+          pele com precisão.
+        </>
+      ),
     },
     {
       icon: <Heart className="w-5 h-5 text-green-500" />,
       title: "Regulador da saúde e bem-estar",
-      text: "Atua por meio dos endocanabinóides (substâncias naturais produzidas pelo próprio corpo), regulando funções vitais de forma suave e fisiológica.",
+      text: (
+        <>
+          Atua por meio dos{" "}
+          endocanabinóides (substâncias naturais produzidas pelo próprio corpo), regulando
+          funções vitais de forma suave e fisiológica.
+        </>
+      ),
     },
     {
       icon: <Leaf className="w-5 h-5 text-lime-600" />,
       title: "Bem-estar Integrativo",
-      text: "Modular o SEC é cultivar vitalidade, longevidade, qualidade de vida e bem-estar, através da nutrição do corpo e da mente.",
+      text: (
+        <>
+          Modular o SEC é cultivar vitalidade, longevidade, qualidade de vida e
+          bem-estar, atráves da nutrição do corpo e da mente com estímulos adequados, bons hábitos e escolhas conscientes!
+        </>
+      ),
     },
   ];
 
   const items = [
     { icon: <Brain />, text: "Distúrbios neurológicos" },
-    { icon: <Smile />, text: "Transtornos comportamentais: Ansiedade, Estresse..." },
+    { icon: <Smile />, text: "Transtornos comportamentais: Ansiedade, Estresse, Fobia..." },
     { icon: <HeartPulse />, text: "Alívio da dor crônica e aguda" },
-    { icon: <Moon />, text: "Melhora do sono, cognição e apetite" },
+    { icon: <Moon />, text: "Melhora do sono, cognição e regulação do apetite" },
     { icon: <Flame />, text: "Doenças inflamatórias" },
-    { icon: <Shield />, text: "Imunidade e doenças dermatológicas" },
-    { icon: <Stethoscope />, text: "Suporte oncológico e paliativos" },
+    { icon: <Shield />, text: "Distúrbios de imunidade, infecções e doenças dermatológicas" },
+    { icon: <Stethoscope />, text: "Suporte oncológico e cuidados paliativos" },
     { icon: <Leaf />, text: "Bem-estar e qualidade de vida" },
   ];
 
@@ -46,6 +66,7 @@ export default function Sec() {
     "Doenças endócrinas e metabólicas",
   ];
 
+  
   return (
     <section id='sec' className="relative px-6 py-24 overflow-hidden bg-white">
 
@@ -104,11 +125,11 @@ export default function Sec() {
 
       {/* ================= DARK CARD CONTAINER ================= */}
       <div className="max-w-5xl mx-auto mt-24 relative">
-        
+
         <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 via-emerald-500/20 to-lime-500/20 blur-3xl rounded-[50px] animate-pulse pointer-events-none" />
 
         <div className="relative z-20 bg-[#123825d4] backdrop-blur-xl text-white rounded-[36px] px-8 md:px-14 py-14 shadow-2xl border border-white/10 overflow-hidden">
-          
+
           <motion.div
             initial={{ width: 0 }}
             whileInView={{ width: "100%" }}
