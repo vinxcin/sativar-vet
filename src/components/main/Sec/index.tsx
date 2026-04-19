@@ -69,7 +69,7 @@ export default function Sec() {
   ];
 
   return (
-    <section className="relative px-6 py-24 overflow-hidden">
+    <section id='sec' className="relative px-6 py-24 overflow-hidden">
 
       {/* ================= TITLE ================= */}
       <motion.div

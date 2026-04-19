@@ -14,7 +14,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#0b241b] text-white overflow-hidden">
+    <footer id='contato' className="relative bg-[#0b241b] text-white overflow-hidden">
 
       {/* ================= DIVIDER ANIMADO ================= */}
       <div className="relative w-full flex justify-center items-center py-14 overflow-hidden">
@@ -128,11 +128,11 @@ export default function Footer() {
 
           {/* CTA PRINCIPAL */}
           <motion.a
-            href="LINK_WPP"
+            href="https://wa.me/5511998394408"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
-            className="group relative inline-flex items-center gap-3 px-6 py-3.5 rounded-full text-sm font-semibold text-black bg-gradient-to-r from-lime-400 via-green-400 to-emerald-500 shadow-xl overflow-hidden"
+            className="group hover:cursor-pointer relative inline-flex items-center gap-3 px-4 py-3.5 rounded-full text-sm font-semibold text-black bg-gradient-to-r from-lime-400 via-green-400 to-emerald-500 shadow-xl overflow-hidden"
           >
             {/* glow animado */}
             <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-white/20 blur-xl" />
@@ -141,9 +141,9 @@ export default function Footer() {
             <span className="absolute -inset-1 bg-green-400/30 blur-xl rounded-full animate-pulse opacity-40" />
 
             {/* conteúdo */}
-            <span className="text-button relative flex items-center gap-2">
-              <MessageCircle className="w-4 h-4" />
+            <span className="text-button text-gray-800 relative flex items-center gap-2">
               Agendar consulta pelo WhatsApp
+              <MessageCircle className="w-4 h-4" />
             </span>
           </motion.a>
 

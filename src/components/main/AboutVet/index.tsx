@@ -4,7 +4,7 @@ import { Linkedin, Leaf } from "lucide-react";
 
 export default function AboutVet() {
   return (
-    <section className="relative px-4 sm:px-6 py-20 md:py-28 min-h-screen flex items-center bg-[#123825d4] overflow-hidden">
+    <section id='sobre' className="relative px-4 sm:px-6 py-20 md:py-28 min-h-screen flex items-center bg-[#123825d4] overflow-hidden">
 
       {/* textura */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(255,255,255,0.05),transparent_40%)]" />
@@ -27,6 +27,7 @@ export default function AboutVet() {
             <motion.img
               src={DRA_LETICIA}
               alt="Dra. Letícia Holanda"
+              loading="lazy"
               initial={{ scale: 1.05 }}
               whileInView={{ scale: 1 }}
               transition={{ duration: 1 }}
@@ -67,7 +68,7 @@ export default function AboutVet() {
           </div>
           {/* badge */}
           <div className="flex justify-center md:justify-start">
-            <span className="text-button inline-block px-4 sm:px-5 py-2 rounded-full border border-white/20 text-emerald-200 text-xs sm:text-sm backdrop-blur-sm tracking-wide text-center">
+            <span className="text-button inline-block text-emerald-200 text-xs sm:text-sm backdrop-blur-sm tracking-wide text-center">
               Cuidado individualizado • Terapias naturais • Bem-estar animal
             </span>
           </div>
@@ -83,70 +84,19 @@ export default function AboutVet() {
             Através de terapias naturais, traz o equilíbrio da natureza para a vida do seu pet, promovendo qualidade de vida, bem-estar e saúde integral de dentro para fora.
           </p>
 
-
-
-
-
           {/* CTA */}
-          <div className="flex justify-center">
+          <div className="flex justify-start">
             <motion.a
               href="https://wa.me/5511998394408"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.96 }}
-              className="group relative inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full text-xs sm:text-sm font-medium text-[#1b2b23] bg-gradient-to-r from-[#d8f3dc] via-[#95d5b2] to-[#52b788] shadow-[0_10px_30px_rgba(0,0,0,0.2)] overflow-hidden"
+              className="group relative inline-flex w-full items-center justify-center gap-2 px-7 py-3.5 rounded-full text-xs sm:text-sm font-medium text-[#1b2b23] bg-gradient-to-r from-[#d8f3dc] via-[#95d5b2] to-[#52b788] shadow-[0_10px_30px_rgba(0,0,0,0.2)] overflow-hidden"
             >
-              {/* 🌿 aura viva (respiração) */}
-              <motion.span
-                className="absolute -inset-3 rounded-full bg-green-300/20 blur-2xl"
-                animate={{
-                  scale: [1, 1.08, 1],
-                  opacity: [0.4, 0.7, 0.4],
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-              />
-
-              {/* 🍃 partículas sutis (natureza viva) */}
-              <motion.span
-                className="absolute w-2 h-2 bg-green-400/40 rounded-full blur-sm"
-                animate={{
-                  x: [0, 20, -10, 0],
-                  y: [0, -15, 10, 0],
-                  opacity: [0, 1, 0],
-                }}
-                transition={{
-                  duration: 6,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-              />
-
-              <motion.span
-                className="absolute w-1.5 h-1.5 bg-emerald-300/40 rounded-full blur-sm"
-                animate={{
-                  x: [10, -15, 10],
-                  y: [0, 10, -10],
-                  opacity: [0, 1, 0],
-                }}
-                transition={{
-                  duration: 7,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-              />
-
-              {/* brilho orgânico (vento passando) */}
-              <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-700">
-                <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent blur-xl translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
-              </span>
-
+    
               {/* conteúdo */}
-              <span className="relative flex items-center gap-2 tracking-wide">
+              <span className="text-button  relative flex items-center gap-2 tracking-wide">
                 Quero regular o SEC do meu pet
 
                 {/* folha viva */}

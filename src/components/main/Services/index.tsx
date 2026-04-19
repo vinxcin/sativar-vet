@@ -21,7 +21,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="relative px-6 py-24 overflow-hidden">
+    <section id='servicos' className="relative px-6 py-24 overflow-hidden">
 
       {/* título */}
       <div className="text-center max-w-2xl mx-auto mb-16">

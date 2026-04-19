@@ -3,6 +3,7 @@ import { BG_HOME, LUNA } from "@/assets/img";
 export default function Hero() {
   return (
     <section
+      id='inicio'
       className="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat overflow-hidden"
       style={{ backgroundImage: `url(${BG_HOME})` }}
     >
@@ -17,15 +18,13 @@ export default function Hero() {
             Cuidado natural, ciência que transforma!
           </h1>
 
-          <p className="text text-gray-100/90 text-lg md:text-[18px] leading-relaxed mb-8">
+          <p className="text-button text-gray-100/90 text-lg md:text-[18px] leading-relaxed mb-8">
             Na <span className="font-semibold text-green-300">Sativar Vet</span>, acreditamos que cada pet é único
             e merece ser cuidado com o olhar integrativo que respeita suas individualidades!
             <br />
             <br />
             Nosso foco é restabelecer o equilíbrio natural do organismo, através de terapias naturais que modulam o Sistema Endocanabinóide, promovendo saúde com propósito.
-            {/* A Dra. Leticia Holanda, especializada em{" "} */}
-            {/* <span className="font-medium text-green-200">Endocanabinologia Veterinária</span>, utiliza terapias naturais que
-            trazem o equilíbrio da natureza para a vida do seu pet. */}
+
           </p>
 
           <a href="https://wa.me/5511998394408" target="_blank" rel="noopener noreferrer">
@@ -50,7 +49,7 @@ export default function Hero() {
         <img
           src={LUNA}
           alt="LUNA"
-          className="sm:w-[52vw] md:w-[72vw] lg:w-[42vw] lg:max-w-[650px] object-contain rounded-t-2xl drop-shadow-2xl translate-y-[10%] "
+          className="sm:w-[52vw] md:w-[72vw] lg:w-[38vw] lg:max-w-[650px] object-contain rounded-t-2xl drop-shadow-2xl translate-y-[10%] "
         />
       </div>
     </section>

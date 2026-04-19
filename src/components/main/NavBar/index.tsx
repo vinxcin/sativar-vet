@@ -2,24 +2,47 @@ import { useState, useEffect } from "react";
 
 export default function NavBar() {
   const [menuOpened, setMenuOpened] = useState(false);
+
   const toggleMenu = () => setMenuOpened((prev) => !prev);
   const closeMenu = () => setMenuOpened(false);
 
   useEffect(() => {
-    const closeOnEscape = (e: KeyboardEvent) => e.key === "Escape" && closeMenu();
-    const closeOnResize = () => window.innerWidth >= 1280 && closeMenu();
+    const closeOnEscape = (e: KeyboardEvent) =>
+      e.key === "Escape" && closeMenu();
+
+    const closeOnResize = () =>
+      window.innerWidth >= 1280 && closeMenu();
 
     window.addEventListener("keydown", closeOnEscape);
     window.addEventListener("resize", closeOnResize);
+
     return () => {
       window.removeEventListener("keydown", closeOnEscape);
       window.removeEventListener("resize", closeOnResize);
     };
   }, []);
 
-  const links = ["Início", "S.E.C.", "Sobre a Vet.", "Serviços", "Depoimentos", "Contato"];
+  const links = [
+    { label: "Início", id: "inicio" },
+    { label: "S.E.C.", id: "sec" },
+    { label: "Sobre a Vet.", id: "sobre" },
+    { label: "Serviços", id: "servicos" },
+    { label: "Depoimentos", id: "depoimentos" },
+    { label: "Contato", id: "contato" },
+  ];
+
   const linkClass =
     "relative text-button max-w-prose md:text-2xl lg:text-[18px] text-gray-100 hover:text-emerald-300 cursor-pointer transition-all duration-300 after:content-[''] after:absolute after:w-0 after:h-[2px] after:left-0 after:-bottom-1 after:bg-emerald-400 after:transition-all after:duration-300 lg:hover:after:w-full";
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
 
   return (
     <nav className="w-full fixed top-0 z-50 bg-white/10 backdrop-blur-md border-b border-white/20 shadow-lg">
@@ -30,48 +53,60 @@ export default function NavBar() {
           Sativar Vet
         </div>
 
-        {/* Links desktop */}
+        {/* Desktop */}
         <ul className="hidden xl:flex space-x-10">
           {links.map((item) => (
-            <li key={item} className= {linkClass}>{item}</li>
+            <li
+              key={item.id}
+              onClick={() => scrollToSection(item.id)}
+              className={linkClass}
+            >
+              {item.label}
+            </li>
           ))}
-
         </ul>
 
         {/* Botão mobile */}
         <button
           onClick={toggleMenu}
           aria-label={menuOpened ? "Fechar menu" : "Abrir menu"}
-          className="xl:hidden text-white text-3xl focus:outline-none hover:scale-110 transition-transform duration-300"
+          className="xl:hidden text-white text-3xl hover:scale-110 transition-transform duration-300"
         >
           {menuOpened ? "✕" : "☰"}
         </button>
       </div>
 
-      {/* Menu mobile */}
+      {/* Mobile */}
       {menuOpened && (
         <div className="fixed inset-0 z-40 xl:hidden">
-          {/* Overlay */}
+
+          {/* overlay */}
           <button
             onClick={closeMenu}
-            aria-label="Fechar menu"
             className="absolute inset-0 bg-black/40 backdrop-blur-sm"
           />
 
-          {/* Painel lateral */}
+          {/* menu */}
           <aside className="relative z-50 w-4/5 max-w-sm h-screen ml-auto bg-gradient-to-b from-emerald-950 to-emerald-900 shadow-2xl rounded-l-3xl p-6 overflow-auto animate-slideIn">
+
             <button
               onClick={closeMenu}
-              className="text-3xl text-emerald-200 hover:text-emerald-400 transition-colors duration-200 float-right"
-              aria-label="Fechar menu"
+              className="text-3xl text-emerald-200 hover:text-emerald-400 float-right"
             >
               ✕
             </button>
 
             <ul className="flex flex-col space-y-6 mt-10">
               {links.map((item) => (
-                <li key={item} onClick={closeMenu} className={linkClass}>
-                  {item}
+                <li
+                  key={item.id}
+                  onClick={() => {
+                    scrollToSection(item.id);
+                    closeMenu();
+                  }}
+                  className={linkClass}
+                >
+                  {item.label}
                 </li>
               ))}
             </ul>
