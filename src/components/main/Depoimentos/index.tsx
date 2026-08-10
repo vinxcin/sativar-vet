@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Star } from "lucide-react";
 import { useState } from "react";
 import { KIARA, MANDA_CHUVA, JOSE_CLAUDIO } from "../../../assets/img";
+import { netlifyImageUrl, netlifyImageSrcSet } from "@/lib/netlifyImage";
 
 export default function Depoimentos() {
   
@@ -64,9 +65,13 @@ export default function Depoimentos() {
               {/* header */}
               <div className="flex items-center gap-4 mb-4">
                 <img
-                  src={item.image}
+                  src={netlifyImageUrl(item.image, 400)}
+                  srcSet={netlifyImageSrcSet(item.image)}
+                  sizes="56px"
                   alt={item.name}
                   loading="lazy"
+                  width={56}
+                  height={56}
                   className="w-14 h-14 rounded-full object-cover"
                 />
 

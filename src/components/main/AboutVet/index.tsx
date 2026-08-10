@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { DRA_LETICIA } from "./../../../assets/img";
+import { netlifyImageUrl, netlifyImageSrcSet } from "@/lib/netlifyImage";
 import { Linkedin, Leaf } from "lucide-react";
 
 export default function AboutVet() {
@@ -25,9 +26,13 @@ export default function AboutVet() {
 
             {/* imagem */}
             <motion.img
-              src={DRA_LETICIA}
+              src={netlifyImageUrl(DRA_LETICIA, 800)}
+              srcSet={netlifyImageSrcSet(DRA_LETICIA)}
+              sizes="(min-width: 768px) 420px, (min-width: 640px) 380px, 320px"
               alt="Dra. Letícia Holanda"
               loading="lazy"
+              width={800}
+              height={1200}
               initial={{ scale: 1.05 }}
               whileInView={{ scale: 1 }}
               transition={{ duration: 1 }}
