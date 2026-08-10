@@ -1,11 +1,12 @@
 import { BG_HOME, LUNA } from "@/assets/img";
+import { netlifyImageUrl, netlifyImageSrcSet } from "@/lib/netlifyImage";
 
 export default function Hero() {
   return (
     <section
       id='inicio'
       className="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat overflow-hidden"
-      style={{ backgroundImage: `url(${BG_HOME})` }}
+      style={{ backgroundImage: `url(${netlifyImageUrl(BG_HOME, 1920)})` }}
     >
       {/* Overlay escuro */}
       <div className="absolute inset-0 bg-emerald-950/80"></div>
@@ -47,8 +48,12 @@ export default function Hero() {
       {/* Imagem fixa no rodapé direito */}
       <div className="hidden md:block absolute bottom-0 right-0 z-20">
         <img
-          src={LUNA}
+          src={netlifyImageUrl(LUNA, 800)}
+          srcSet={netlifyImageSrcSet(LUNA)}
+          sizes="(min-width: 1024px) 650px, 72vw"
           loading="lazy"
+          width={800}
+          height={1200}
           alt="LUNA"
           className="sm:w-[52vw] md:w-[72vw] lg:w-[38vw] lg:max-w-[650px] object-contain rounded-t-2xl drop-shadow-2xl translate-y-[10%] "
         />
